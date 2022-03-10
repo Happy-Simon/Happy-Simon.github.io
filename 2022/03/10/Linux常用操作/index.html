@@ -16,15 +16,15 @@
   <meta name="author" content="Black">
   <meta name="keywords" content="">
   
-    <meta name="description" content="[toc] 1. Anaconda 安装下载安装包setp1：下载anaconda先下载Linux的anaconda安装包，如Anaconda3-2021.05-Linux-x86_64.sh注：可去网页下载https:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;anaconda&#x2F;archive&#x2F;或者wget -P &#x2F;tmp https:&#x2F;&#x2F;repo.anaconda.com&#x2F;a">
+    <meta name="description" content="[toc] 1. Linux常用命令 cd 12cd &#x2F;home&#x2F;jiangzihao&#x2F;Project&#x2F;Simulation&#x2F; #进入指定路径cd .. #返回上一级命令  解压文件 12unzip FileName.zip #解压zip FileName.zip DirName #压缩  Others 123456789101112# 查看进程toptop -u jiangzihao # 查看用">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux常用操作">
 <meta property="og:url" content="http://example.com/2022/03/10/Linux%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/index.html">
 <meta property="og:site_name" content="黑黑">
-<meta property="og:description" content="[toc] 1. Anaconda 安装下载安装包setp1：下载anaconda先下载Linux的anaconda安装包，如Anaconda3-2021.05-Linux-x86_64.sh注：可去网页下载https:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;anaconda&#x2F;archive&#x2F;或者wget -P &#x2F;tmp https:&#x2F;&#x2F;repo.anaconda.com&#x2F;a">
+<meta property="og:description" content="[toc] 1. Linux常用命令 cd 12cd &#x2F;home&#x2F;jiangzihao&#x2F;Project&#x2F;Simulation&#x2F; #进入指定路径cd .. #返回上一级命令  解压文件 12unzip FileName.zip #解压zip FileName.zip DirName #压缩  Others 123456789101112# 查看进程toptop -u jiangzihao # 查看用">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-03-10T11:48:35.000Z">
-<meta property="article:modified_time" content="2022-03-10T11:53:45.877Z">
+<meta property="article:modified_time" content="2022-03-10T12:57:54.985Z">
 <meta property="article:author" content="Black">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -196,7 +196,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      4.3k 字
+      5.5k 字
     </span>
   
 
@@ -205,7 +205,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      36 分钟
+      46 分钟
     </span>
   
 
@@ -246,78 +246,114 @@
             
             <div class="markdown-body">
               <p>[toc]</p>
-<h1 id="1-Anaconda-安装"><a href="#1-Anaconda-安装" class="headerlink" title="1. Anaconda 安装"></a>1. Anaconda 安装</h1><p>下载安装包<br>setp1：下载anaconda<br>先下载Linux的anaconda安装包，如Anaconda3-2021.05-Linux-x86_64.sh<br>注：可去网页下载<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/</a><br>或者<br><code>wget -P /tmp https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh</code></p>
-<p>step2：解压安装包<br><code>bash Anaconda3-2021.05-Linux-x86_64.sh</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></div></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 下载安装包</span><br>wget -P /tmp https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh<br><span class="hljs-comment"># 解压安装包</span><br>bash Anaconda3-2021.05-Linux-x86_64.sh<br><span class="hljs-comment"># 配置镜像</span><br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/<br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r/win-64<br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/<br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/<br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/<br><span class="hljs-comment"># 更新conda</span><br>conda update<br></code></pre></td></tr></table></figure>
+<h1 id="1-Linux常用命令"><a href="#1-Linux常用命令" class="headerlink" title="1. Linux常用命令"></a>1. Linux常用命令</h1><ul>
+<li><p>cd</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> /home/jiangzihao/Project/Simulation/ <span class="hljs-comment">#进入指定路径</span><br><span class="hljs-built_in">cd</span> .. <span class="hljs-comment">#返回上一级命令</span><br></code></pre></td></tr></table></figure>
+</li>
+<li><p>解压文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">unzip FileName.zip <span class="hljs-comment">#解压</span><br>zip FileName.zip DirName <span class="hljs-comment">#压缩</span><br></code></pre></td></tr></table></figure>
+</li>
+<li><p>Others</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 查看进程</span><br>top<br>top -u jiangzihao <span class="hljs-comment"># 查看用户jiangzihao的所有进程</span><br><span class="hljs-comment"># 查看使用内存最多的10个进程</span><br>ps -aux|<span class="hljs-built_in">head</span> -1;ps -aux|<span class="hljs-built_in">sort</span> -k4nr|<span class="hljs-built_in">head</span> -10<br><span class="hljs-comment"># 下载文件</span><br>wget http://prdownloads.sourceforge.net/sourceforge/nagios/nagios-3.2.1.tar.gz<br><span class="hljs-comment"># 下载文件并以指定的文件名保存文件</span><br>wget -O taglist.zip http://www.vim.org/scripts/download_script.php?src_id=7701 <br><span class="hljs-comment"># 检查网络连接情况</span><br>ping baidu.com<br><br></code></pre></td></tr></table></figure>
 
-<h1 id="2-miniconda安装"><a href="#2-miniconda安装" class="headerlink" title="2. miniconda安装"></a>2. miniconda安装</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">wget -c https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh<br>bash Miniconda3-latest-Linux-x86_64.sh<br><br></code></pre></td></tr></table></figure>
+</li>
+<li><p>screen开辟新空间</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash">screen -S <span class="hljs-built_in">test</span> <span class="hljs-comment">#开辟一个名为test的空间</span><br>Rscript test.R <span class="hljs-comment">#执行代码</span><br>Ctrl + A + D  <span class="hljs-comment"># 从开辟的空间安全退出，代码仍在执行。</span><br>screen -<span class="hljs-built_in">ls</span> <span class="hljs-comment"># 查看所有开辟的空间，包含ID信息</span><br>screen -r ID <span class="hljs-comment"># 再次进入开辟的空间，查看代码运行情况</span><br><span class="hljs-built_in">kill</span> ID <span class="hljs-comment"># 删除该运行空间 </span><br><span class="hljs-built_in">kill</span> 46747 <span class="hljs-comment"># 删除ID为46747的空间</span><br>pkill -u jiangzihao <span class="hljs-comment"># 删除用户jiangzihao的所有运行的空间。</span><br>screen -wipe <span class="hljs-comment">#清楚dead的空间</span><br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>开辟窗口后可直接在窗口运行R代码，执行后使用快捷键<code>Ctrl</code>+<code>A</code>+<code>D</code>安全退出，程序在后台继续执行。</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="2-Anaconda-安装"><a href="#2-Anaconda-安装" class="headerlink" title="2. Anaconda 安装"></a>2. Anaconda 安装</h1><p>下载安装包<br>setp1：下载anaconda<br>先下载Linux的anaconda安装包，如Anaconda3-2021.05-Linux-x86_64.sh<br>注：可去网页下载<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/">https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/</a><br>或者<br><code>wget -P /tmp https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh</code></p>
+<p>step2：解压安装包<br><code>bash Anaconda3-2021.05-Linux-x86_64.sh</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 下载安装包</span><br>wget -P /tmp https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh<br><span class="hljs-comment"># 解压安装包</span><br>bash Anaconda3-2021.05-Linux-x86_64.sh<br><span class="hljs-comment"># 配置镜像</span><br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/<br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r/win-64<br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/<br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/<br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/<br><span class="hljs-comment"># 更新conda</span><br>conda update<br></code></pre></td></tr></table></figure>
+
+<h1 id="3-miniconda安装"><a href="#3-miniconda安装" class="headerlink" title="3. miniconda安装"></a>3. miniconda安装</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">wget -c https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh<br>bash Miniconda3-latest-Linux-x86_64.sh<br></code></pre></td></tr></table></figure>
 
 <p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/edaa744ea47d">conda的安装与使用</a></p>
-<h1 id="3-VScode安装"><a href="#3-VScode安装" class="headerlink" title="3. VScode安装"></a>3. VScode安装</h1><h1 id="4-R安装与配置"><a href="#4-R安装与配置" class="headerlink" title="4. R安装与配置"></a>4. R安装与配置</h1><h2 id="4-1-anaconda安装R-VScode编辑代码"><a href="#4-1-anaconda安装R-VScode编辑代码" class="headerlink" title="4.1. anaconda安装R, VScode编辑代码"></a>4.1. anaconda安装R, VScode编辑代码</h2><h3 id="4-1-1-Anaconda安装R"><a href="#4-1-1-Anaconda安装R" class="headerlink" title="4.1.1. Anaconda安装R"></a>4.1.1. Anaconda安装R</h3><ul>
-<li>添加channels，系统自带的哪些channels都只有老版本的R</li>
+<h1 id="4-安装python系列"><a href="#4-安装python系列" class="headerlink" title="4. 安装python系列"></a>4. 安装python系列</h1><ul>
+<li><p>Pytorch</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 创建一个包好python3.8的新环境</span><br>conda create -n pytorch_cpu python=3.8<br>conda activate pytorch_cpu<br>pip install torchvision<br><br>conda create -n putorch_cpu<br><span class="hljs-comment">#激活新环境</span><br>conda activate -n putorch_cpu<br><span class="hljs-comment"># 添加清华镜像源</span><br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/<br><span class="hljs-comment"># 安装</span><br>conda install pytorch torchvision torchaudio cpuonly<br><span class="hljs-comment"># 检查安装是否成功</span><br>conda activate pytorch_cpu<br>python<br>import torch<br><br><span class="hljs-comment"># 取消激活并移除新环境</span><br>conda activate/conda deactivate<br>conda remove -n pytorch_cpu<br><span class="hljs-comment"># 清楚错误缓存</span><br>conda activate/conda deactivate<br>conda clean --all <br></code></pre></td></tr></table></figure></li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> <br>d: <br><span class="hljs-comment">#针对windows要增加上述两条命令</span><br>conda config --add channels conda-forge<br>conda config --add channels r<br>conda config --add channels bioconda<br></code></pre></td></tr></table></figure>
-
-<ul>
-<li>创建R环境并安装R<br>查询官网,查看最新的R，为4.1.0<br><a target="_blank" rel="noopener" href="https://anaconda.org/conda-forge/r-base">https://anaconda.org/conda-forge/r-base</a><br>创建名为<code>r_env</code>的R环境，并在环境中安装版本<code>4.1.0</code>的R</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda create -n r_env r=4.1.0<br></code></pre></td></tr></table></figure>
-
-<ul>
-<li>激活R环境，测试创建是否成功</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">R<br></code></pre></td></tr></table></figure>
-
-<h3 id="4-1-2-VScode配置R"><a href="#4-1-2-VScode配置R" class="headerlink" title="4.1.2. VScode配置R"></a>4.1.2. VScode配置R</h3><ul>
-<li><p>R中安装R包<code>languageserver</code></p>
 <blockquote>
-<p>激活R后安装R包<code>languageserver</code></p>
+<p>注：pytorch不兼容python3.8</p>
 </blockquote>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs r">install.packages<span class="hljs-punctuation">(</span><span class="hljs-string">&quot;languageserver&quot;</span><span class="hljs-punctuation">)</span><br>library<span class="hljs-punctuation">(</span>languageserver<span class="hljs-punctuation">)</span> <span class="hljs-comment">#测试</span><br></code></pre></td></tr></table></figure>
+<p>  参考：<br>  <a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1627527">https://cloud.tencent.com/developer/article/1627527</a><br>  <a target="_blank" rel="noopener" href="https://pytorch.org/">https://pytorch.org/</a></p>
+<h1 id="5-Anaconda常用命令"><a href="#5-Anaconda常用命令" class="headerlink" title="5. Anaconda常用命令"></a>5. Anaconda常用命令</h1><ul>
+<li><p>Channels相关</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs conda"># 添加镜像<br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/<br># 查看所有镜像<br>conda config --get channels<br># 移除镜像<br></code></pre></td></tr></table></figure>
 </li>
-<li><p>conda安装radian</p>
+<li><p>常用镜像</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs conda">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r<br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/<br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/<br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/<br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/<br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/ #安装pytorch常用，非常快<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>环境相关</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs conda">conda info --envs #查看环境<br>conda create -n r_env #创建名为r_env的环境<br>conda activate r_env #激活r_env环境<br>conda deactivate #退出当前环境<br>conda remove -n r_env --all #移除r_env环境<br><br># 将py2的环境重新命名成python2<br>conda create -n python2 --clone py2<br>conda remove -n py2 --all<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="6-Install-R-based-Anaconda-amp-VScode"><a href="#6-Install-R-based-Anaconda-amp-VScode" class="headerlink" title="6. Install R based Anaconda&amp;VScode"></a>6. Install R based Anaconda&amp;VScode</h1><h2 id="6-1-Anaconda安装R"><a href="#6-1-Anaconda安装R" class="headerlink" title="6.1. Anaconda安装R"></a>6.1. Anaconda安装R</h2><ul>
+<li><p>Step1: 添加channels，系统自带的哪些channels都只有老版本的R</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> <br>d: <br><span class="hljs-comment">#针对windows要增加上述两条命令</span><br>conda config --add channels conda-forge<br>conda config --add channels r<br>conda config --add channels bioconda<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>Step2: 创建R环境并安装R<br>  查询官网,查看最新的R，为4.1.0<br>  <a target="_blank" rel="noopener" href="https://anaconda.org/conda-forge/r-base">https://anaconda.org/conda-forge/r-base</a><br>  创建名为<code>r_env</code>的R环境，并在环境中安装版本<code>4.1.0</code>的R</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda create -n r_env r=4.1.0<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>Step3: 激活R环境，测试创建是否成功</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">R<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="6-2-VScode配置R"><a href="#6-2-VScode配置R" class="headerlink" title="6.2. VScode配置R"></a>6.2. VScode配置R</h2><ul>
+<li><p>Step1: VScode安装<br>  搜索网上教程</p>
+</li>
+<li><p>Step2: R中安装R包<code>languageserver</code><br>  激活R后安装R包<code>languageserver</code></p>
+  <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs r">install.packages<span class="hljs-punctuation">(</span><span class="hljs-string">&quot;languageserver&quot;</span><span class="hljs-punctuation">)</span><br>library<span class="hljs-punctuation">(</span>languageserver<span class="hljs-punctuation">)</span> <span class="hljs-comment">#测试</span><br></code></pre></td></tr></table></figure>
+</li>
+<li><p>Step3: conda安装radian</p>
 <blockquote>
 <p><strong>radian比Rscript更好用</strong>；<br>可将radian安装在conda主环境下，也可将<code>radian</code>安装在R环境下。</p>
 </blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda activate <span class="hljs-comment">#激活base的环境</span><br>conda install radian <span class="hljs-comment">#conda命令安装radian</span><br></code></pre></td></tr></table></figure>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda activate <span class="hljs-comment">#激活base的环境</span><br>conda install radian <span class="hljs-comment">#conda命令安装radian</span><br></code></pre></td></tr></table></figure>
 
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda activate r_env <span class="hljs-comment">#激活名叫r_env的环境</span><br>conda install radian <span class="hljs-comment">#conda命令安装radian</span><br>radian <span class="hljs-comment">#测试安装是否成功</span><br></code></pre></td></tr></table></figure>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda activate r_env <span class="hljs-comment">#激活名叫r_env的环境</span><br>conda install radian <span class="hljs-comment">#conda命令安装radian</span><br>radian <span class="hljs-comment">#测试安装是否成功</span><br></code></pre></td></tr></table></figure>
 </li>
-<li><p>VScode安装插件<code>R</code>并配置<code>RScript</code>和<code>radian</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda activate r_env <span class="hljs-comment">#激活R所在的环境</span><br><span class="hljs-built_in">which</span> R <span class="hljs-comment">#查找R所在目录</span><br>conda activate r_env <span class="hljs-comment">#激活radian所在环境</span><br><span class="hljs-built_in">which</span> radian <span class="hljs-comment">#查找radian所在目录</span><br></code></pre></td></tr></table></figure>
-
+<li><p>Step4: VScode安装插件<code>R</code>并配置<code>RScript</code>和<code>radian</code></p>
 <ul>
-<li><p>假设得到<code>R</code>的目录<br><code>/home/ubuntu/anaconda3/envs/r_env/bin/R</code><br>然后在VScode中为<code>Rpath: Linux</code>添加此目录</p>
-</li>
-<li><p>得到<code>radian</code>的目录<br><code>/home/ubuntu/anaconda3/envs/r_env/bin/radian</code><br>然后再VScode中为<code>Rterm: Linux</code>添加此目录</p>
-</li>
-<li><p>勾选<code>R: Bracketed Paste</code></p>
-<blockquote>
-<p>如果不勾选，Radian则无法使用</p>
+<li>寻找R和radian路经  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda activate r_env <span class="hljs-comment">#激活R所在的环境</span><br><span class="hljs-built_in">which</span> R <span class="hljs-comment">#查找R所在目录</span><br>conda activate r_env <span class="hljs-comment">#激活radian所在环境</span><br><span class="hljs-built_in">which</span> radian <span class="hljs-comment">#查找radian所在目录</span><br></code></pre></td></tr></table></figure>
+  假设得到<code>R</code>的目录<br>  <code>/home/ubuntu/anaconda3/envs/r_env/bin/R</code><br>  然后在VScode中为<code>Rpath: Linux</code>添加此目录<br>  得到<code>radian</code>的目录<br>  <code>/home/ubuntu/anaconda3/envs/r_env/bin/radian</code><br>  然后再VScode中为<code>Rterm: Linux</code>添加此目录<br>  勾选<code>R: Bracketed Paste</code><blockquote>
+<p>如果不勾选，Radian则无法使用<br>  勾选<code>R: Always Use ActiveTerminal</code><br>否则快捷键<code>ctrl</code>+<code>Enter</code>运行R代码，总会打开新的终端。</p>
 </blockquote>
 </li>
-<li><p>勾选<code>R: Always Use ActiveTerminal</code><br>否则快捷键<code>ctrl</code>+<code>Enter</code>运行R代码，总会打开新的终端。</p>
-</li>
-<li><p>删除没必要的东西<br>  –no-save;<br>  -no-restore;<br>  –no-site-file(如果有的话)</p>
-</li>
+<li>删除没必要的东西<br>–no-save;<br>-no-restore;<br>–no-site-file(如果有的话)</li>
 </ul>
 </li>
 </ul>
-<h4 id="4-1-2-1-安装R包"><a href="#4-1-2-1-安装R包" class="headerlink" title="4.1.2.1. 安装R包"></a>4.1.2.1. 安装R包</h4><ul>
-<li><p>通过R安装</p>
-  <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs r"><span class="hljs-comment"># 默认安装方式</span><br>install.packages<span class="hljs-punctuation">(</span><span class="hljs-string">&quot;mice&quot;</span><span class="hljs-punctuation">)</span> <br><br><span class="hljs-comment">#安装本地的R包，将包拖拽到服务器后，激活R输入此命令。</span><br>install.packages<span class="hljs-punctuation">(</span><span class="hljs-string">&#x27;/home/jiangzihao/nloptr_1.2.2.2.tar.gz&#x27;</span><span class="hljs-punctuation">,</span> repo<span class="hljs-operator">=</span><span class="hljs-literal">NULL</span><span class="hljs-punctuation">,</span> type<span class="hljs-operator">=</span><span class="hljs-string">&#x27;source&#x27;</span><span class="hljs-punctuation">)</span><br><br><span class="hljs-comment"># 安装github上的包</span><br>library<span class="hljs-punctuation">(</span>devtools<span class="hljs-punctuation">)</span><br>install_github<span class="hljs-punctuation">(</span><span class="hljs-string">&quot;RevolutionAnalytics/RHadoop&quot;</span><span class="hljs-punctuation">)</span><br></code></pre></td></tr></table></figure>
+<h1 id="7-Linux后台运行R脚本"><a href="#7-Linux后台运行R脚本" class="headerlink" title="7. Linux后台运行R脚本"></a>7. Linux后台运行R脚本</h1><ul>
+<li>激活R后直接运行</li>
+<li>后台运行R代码<ul>
+<li><p>nohup方式</p>
+<ul>
+<li><p>为<code>test.R</code>脚本指定编译使用的<code>R</code><br>  在<code>test.R</code>脚本的首行增加</p>
+  <figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gradle">#! <span class="hljs-regexp">/home/</span>jiangzihao<span class="hljs-regexp">/anaconda3/</span>envs<span class="hljs-regexp">/r_env/</span>bin/   Rscript --vanilla<br></code></pre></td></tr></table></figure>
+
+<p>  其中<code>Rscript</code>的路径可在激活R后用<code>which</code>命令查找。</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda activate r_env<br><span class="hljs-built_in">which</span> Rscript<br></code></pre></td></tr></table></figure>
 </li>
-<li><p>通过conda安装<code>mice</code>包</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda activate r_env<br>conda install r-mice<br></code></pre></td></tr></table></figure>
+<li><p>执行脚本<br>  在终端中直接输入执行命令</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">nohup</span> Rscript /home/jiangzihao/Project/Simulation/rpf_group2_missforest.R &amp;&gt;nohup.out&amp;<br></code></pre></td></tr></table></figure>
+
+<p>  或者先cd到脚本所在目录，然后执行脚本</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> /home/jiangzihao/Project/Simulation<br><span class="hljs-built_in">nohup</span> Rscript rpf_group2_missforest.R &amp;&gt;nohup.out&amp;<br></code></pre></td></tr></table></figure>
 
 <blockquote>
-<p>使用conda安装R包会比用R安装快得多。</p>
+<p>&amp;表示在后台运行R代码，nohup保证及时shell断开也可以继续运行代码。</p>
 </blockquote>
 </li>
+<li><p>Screen方式<br>  先screen开辟新空间，然后激活conda激活R&#x2F;radian，然后跑代码，然后按<code>Ctrl</code>+<code>A</code>+<code>D</code>退出开辟的空间</p>
+</li>
 </ul>
-<h4 id="4-1-2-2-常用R包"><a href="#4-1-2-2-常用R包" class="headerlink" title="4.1.2.2. 常用R包"></a>4.1.2.2. 常用R包</h4><p>[[R_Programming]]</p>
-<h4 id="4-1-2-3-创建R包"><a href="#4-1-2-3-创建R包" class="headerlink" title="4.1.2.3. 创建R包"></a>4.1.2.3. 创建R包</h4><p><a target="_blank" rel="noopener" href="https://www.bioinfo-scrounger.com/archives/546/">如何快速写一个R包</a><br><a target="_blank" rel="noopener" href="https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-the-RStudio-IDE">Developing Packages with the RStudio IDE</a><br><a target="_blank" rel="noopener" href="https://support.rstudio.com/hc/en-us/articles/200486508-Building-Testing-and-Distributing-Packages">Building, Testing, and Distributing Packages</a></p>
-<h2 id="4-2-MATLAB安装与配置"><a href="#4-2-MATLAB安装与配置" class="headerlink" title="4.2. MATLAB安装与配置"></a>4.2. MATLAB安装与配置</h2><h3 id="4-2-1-Linux安装MATLAB"><a href="#4-2-1-Linux安装MATLAB" class="headerlink" title="4.2.1. Linux安装MATLAB"></a>4.2.1. Linux安装MATLAB</h3><ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="7-1-MATLAB安装与配置"><a href="#7-1-MATLAB安装与配置" class="headerlink" title="7.1. MATLAB安装与配置"></a>7.1. MATLAB安装与配置</h2><h1 id="8-Install-MATLAB-without-graphic-interface-in-linux-based-on-VScode"><a href="#8-Install-MATLAB-without-graphic-interface-in-linux-based-on-VScode" class="headerlink" title="8. Install MATLAB without graphic interface in linux based on VScode"></a>8. Install MATLAB without graphic interface in linux based on VScode</h1><h2 id="8-1-Linux安装MATLAB"><a href="#8-1-Linux安装MATLAB" class="headerlink" title="8.1. Linux安装MATLAB"></a>8.1. Linux安装MATLAB</h2><ul>
 <li><p>下载软件</p>
 </li>
 <li><p>安装流程</p>
@@ -332,52 +368,7 @@
 <li><p><a target="_blank" rel="noopener" href="https://www.huaweicloud.com/articles/12546747.html">Linuxx下安装MATLAB</a></p>
 </li>
 </ul>
-<h3 id="4-2-2-VScode配置MATLAB"><a href="#4-2-2-VScode配置MATLAB" class="headerlink" title="4.2.2. VScode配置MATLAB"></a>4.2.2. VScode配置MATLAB</h3><h4 id="4-2-2-1-Windows安装MATLAB"><a href="#4-2-2-1-Windows安装MATLAB" class="headerlink" title="4.2.2.1. Windows安装MATLAB"></a>4.2.2.1. Windows安装MATLAB</h4><ul>
-<li><p>MATLAB安装toolbox</p>
-<ul>
-<li><code>Manopt</code><br>参考自<br><a target="_blank" rel="noopener" href="https://www.manopt.org/tutorial.html#firstexample">https://www.manopt.org/tutorial.html#firstexample</a></li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># step1: Download Manopt toobox</span><br><span class="hljs-comment"># step2: Unzip and copy the whole manopt directory you just downloaded in a location of your choice, say, in /my/directory/.</span><br><span class="hljs-comment"># step3: Go to /my/directory/manopt/ at the Matlab prompt and execute importmanopt.</span><br><span class="hljs-comment"># You may save this path for your next Matlab sessions (via savepath)</span><br></code></pre></td></tr></table></figure>
-
-<ul>
-<li><code>STOP</code><br><a target="_blank" rel="noopener" href="https://stmopt.gitee.io/tutorial.html">https://stmopt.gitee.io/tutorial.html</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="4-3-程序运行"><a href="#4-3-程序运行" class="headerlink" title="4.3. 程序运行"></a>4.3. 程序运行</h2><h3 id="4-3-1-Linux运行R脚本"><a href="#4-3-1-Linux运行R脚本" class="headerlink" title="4.3.1. Linux运行R脚本"></a>4.3.1. Linux运行R脚本</h3><ul>
-<li>激活R后直接运行</li>
-<li>后台运行R代码<ul>
-<li><p>nohup方式</p>
-<ul>
-<li><p>为<code>test.R</code>脚本指定编译使用的<code>R</code><br>  在<code>test.R</code>脚本的首行增加</p>
-  <figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gradle">#! <span class="hljs-regexp">/home/</span>jiangzihao<span class="hljs-regexp">/anaconda3/</span>envs<span class="hljs-regexp">/r_env/</span>bin/   Rscript --vanilla<br></code></pre></td></tr></table></figure>
-
-<p>  其中<code>Rscript</code>的路径可在激活R后用<code>which</code>命令查找。</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda activate r_env<br><span class="hljs-built_in">which</span> Rscript<br></code></pre></td></tr></table></figure>
-</li>
-<li><p>执行脚本<br>在终端中直接输入执行命令</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">nohup</span> Rscript /home/jiangzihao/Project/Simulation/rpf_group2_missforest.R &amp;&gt;nohup.out&amp;<br></code></pre></td></tr></table></figure>
-
-<p>  或者先cd到脚本所在目录，然后执行脚本</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> /home/jiangzihao/Project/Simulation<br><span class="hljs-built_in">nohup</span> Rscript rpf_group2_missforest.R &amp;&gt;nohup.out&amp;<br></code></pre></td></tr></table></figure>
-
-<blockquote>
-<p>&amp;表示在后台运行R代码，nohup保证及时shell断开也可以继续运行代码。</p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p>screen方式</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash">screen -S <span class="hljs-built_in">test</span> <span class="hljs-comment">#开辟一个名为test的空间</span><br>Rscript test.R <span class="hljs-comment">#执行代码</span><br>Ctrl + A + D  <span class="hljs-comment"># 从开辟的空间安全退出，代码仍在执行。</span><br>screen -<span class="hljs-built_in">ls</span> <span class="hljs-comment"># 查看所有开辟的空间，包含ID信息</span><br>screen -r ID <span class="hljs-comment"># 再次进入开辟的空间，查看代码运行情况</span><br><span class="hljs-built_in">kill</span> ID <span class="hljs-comment"># 删除该运行空间 </span><br><span class="hljs-built_in">kill</span> 46747 <span class="hljs-comment"># 删除ID为46747的空间</span><br>pkill -u jiangzihao <span class="hljs-comment"># 删除用户jiangzihao的所有运行的空间。</span><br>screen -wipe <span class="hljs-comment">#清楚dead的空间</span><br></code></pre></td></tr></table></figure>
-
-<blockquote>
-<p>开辟窗口后可直接在窗口运行R代码，执行后使用快捷键<code>Ctrl</code>+<code>A</code>+<code>D</code>安全退出，程序在后台继续执行。</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-
+<h2 id="8-2-VScode配置MATLAB"><a href="#8-2-VScode配置MATLAB" class="headerlink" title="8.2. VScode配置MATLAB"></a>8.2. VScode配置MATLAB</h2>
             </div>
             <hr>
             <div>
