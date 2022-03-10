@@ -16,16 +16,18 @@
   <meta name="author" content="Black">
   <meta name="keywords" content="">
   
-    <meta name="description" content="1. 安装R包 通过R安装   123456789# 默认安装方式install.packages(&quot;mice&quot;) #安装本地的R包，将包拖拽到服务器后，激活R输入此命令。install.packages(&amp;#x27;&#x2F;home&#x2F;jiangzihao&#x2F;nloptr_1.2.2.2.tar.gz&amp;#x27;, repo&#x3D;NULL, type&#x3D;&amp;#x27;source&amp;#x27;)">
+    <meta name="description" content="主要记载了一些R包">
 <meta property="og:type" content="article">
 <meta property="og:title" content="R包相关">
 <meta property="og:url" content="http://example.com/2022/03/10/R%E5%8C%85%E7%9B%B8%E5%85%B3/index.html">
 <meta property="og:site_name" content="黑黑">
-<meta property="og:description" content="1. 安装R包 通过R安装   123456789# 默认安装方式install.packages(&quot;mice&quot;) #安装本地的R包，将包拖拽到服务器后，激活R输入此命令。install.packages(&amp;#x27;&#x2F;home&#x2F;jiangzihao&#x2F;nloptr_1.2.2.2.tar.gz&amp;#x27;, repo&#x3D;NULL, type&#x3D;&amp;#x27;source&amp;#x27;)">
+<meta property="og:description" content="主要记载了一些R包">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-03-10T11:55:19.000Z">
-<meta property="article:modified_time" content="2022-03-10T12:52:32.456Z">
+<meta property="article:modified_time" content="2022-03-10T16:21:12.370Z">
 <meta property="article:author" content="Black">
+<meta property="article:tag" content="R">
+<meta property="article:tag" content="R package">
 <meta name="twitter:card" content="summary_large_image">
   
   
@@ -245,173 +247,148 @@
             <h1 style="display: none">R包相关</h1>
             
             <div class="markdown-body">
-              <h1 id="1-安装R包"><a href="#1-安装R包" class="headerlink" title="1. 安装R包"></a>1. 安装R包</h1><ul>
+              <p>主要记载了一些R包</p>
+<span id="more"></span>
+<h1 id="安装r包">1. 安装R包</h1>
+<ul>
 <li><p>通过R安装</p>
-  <figure class="highlight r"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></div></td><td class="code"><pre><code class="hljs r"><span class="hljs-comment"># 默认安装方式</span><br>install.packages<span class="hljs-punctuation">(</span><span class="hljs-string">&quot;mice&quot;</span><span class="hljs-punctuation">)</span> <br><br><span class="hljs-comment">#安装本地的R包，将包拖拽到服务器后，激活R输入此命令。</span><br>install.packages<span class="hljs-punctuation">(</span><span class="hljs-string">&#x27;/home/jiangzihao/nloptr_1.2.2.2.tar.gz&#x27;</span><span class="hljs-punctuation">,</span> repo<span class="hljs-operator">=</span><span class="hljs-literal">NULL</span><span class="hljs-punctuation">,</span> type<span class="hljs-operator">=</span><span class="hljs-string">&#x27;source&#x27;</span><span class="hljs-punctuation">)</span><br><br><span class="hljs-comment"># 安装github上的包</span><br>library<span class="hljs-punctuation">(</span>devtools<span class="hljs-punctuation">)</span><br>install_github<span class="hljs-punctuation">(</span><span class="hljs-string">&quot;RevolutionAnalytics/RHadoop&quot;</span><span class="hljs-punctuation">)</span><br></code></pre></td></tr></table></figure>
-</li>
+<p><figure class="highlight r"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></div></td><td class="code"><pre><code class="hljs r"><span class="hljs-comment"># 默认安装方式</span><br>install.packages<span class="hljs-punctuation">(</span><span class="hljs-string">&quot;mice&quot;</span><span class="hljs-punctuation">)</span> <br><br><span class="hljs-comment">#安装本地的R包，将包拖拽到服务器后，激活R输入此命令。</span><br>install.packages<span class="hljs-punctuation">(</span><span class="hljs-string">&#x27;/home/jiangzihao/nloptr_1.2.2.2.tar.gz&#x27;</span><span class="hljs-punctuation">,</span> repo<span class="hljs-operator">=</span><span class="hljs-literal">NULL</span><span class="hljs-punctuation">,</span> type<span class="hljs-operator">=</span><span class="hljs-string">&#x27;source&#x27;</span><span class="hljs-punctuation">)</span><br><br><span class="hljs-comment"># 安装github上的包</span><br>library<span class="hljs-punctuation">(</span>devtools<span class="hljs-punctuation">)</span><br>install_github<span class="hljs-punctuation">(</span><span class="hljs-string">&quot;RevolutionAnalytics/RHadoop&quot;</span><span class="hljs-punctuation">)</span><br></code></pre></td></tr></table></figure></p></li>
 <li><p>通过conda安装<code>mice</code>包</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda activate r_env<br>conda install r-mice<br></code></pre></td></tr></table></figure>
-
+<p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda activate r_env<br>conda install r-mice<br></code></pre></td></tr></table></figure></p>
 <blockquote>
 <p>使用conda安装R包会比用R安装快得多。</p>
-</blockquote>
-</li>
+</blockquote></li>
 </ul>
-<h1 id="2-R包使用教程"><a href="#2-R包使用教程" class="headerlink" title="2. R包使用教程"></a>2. R包使用教程</h1><ul>
+<h1 id="r包使用教程">2. R包使用教程</h1>
+<ul>
 <li><a target="_blank" rel="noopener" href="https://cran.r-project.org/">官方发布的R package查询与下载</a></li>
 <li><a target="_blank" rel="noopener" href="https://rdrr.io/">R包中的源代码下载</a></li>
 </ul>
-<h1 id="3-常用R包"><a href="#3-常用R包" class="headerlink" title="3. 常用R包"></a>3. 常用R包</h1><h2 id="3-1-Matrix-computation"><a href="#3-1-Matrix-computation" class="headerlink" title="3.1. Matrix computation"></a>3.1. Matrix computation</h2><ul>
+<h1 id="常用r包">3. 常用R包</h1>
+<h2 id="matrix-computation">3.1. Matrix computation</h2>
+<ul>
 <li><p>自带</p>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs r">solve<span class="hljs-punctuation">(</span><span class="hljs-punctuation">)</span> <span class="hljs-comment"># 矩阵求逆</span><br>eigen<span class="hljs-punctuation">(</span><span class="hljs-punctuation">)</span> <span class="hljs-comment"># 求矩阵特征值</span><br>svd<span class="hljs-punctuation">(</span><span class="hljs-punctuation">)</span> <span class="hljs-comment"># svd分解</span><br>mvrnorm <span class="hljs-comment"># 生成多元正态随机向量</span><br></code></pre></td></tr></table></figure>
-</li>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs r">solve<span class="hljs-punctuation">(</span><span class="hljs-punctuation">)</span> <span class="hljs-comment"># 矩阵求逆</span><br>eigen<span class="hljs-punctuation">(</span><span class="hljs-punctuation">)</span> <span class="hljs-comment"># 求矩阵特征值</span><br>svd<span class="hljs-punctuation">(</span><span class="hljs-punctuation">)</span> <span class="hljs-comment"># svd分解</span><br>mvrnorm <span class="hljs-comment"># 生成多元正态随机向量</span><br></code></pre></td></tr></table></figure></li>
 <li><p><code>Matrix</code></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs r">rankMatrix<span class="hljs-punctuation">(</span><span class="hljs-punctuation">)</span> <span class="hljs-comment">#求矩阵的rank</span><br>bdiag<span class="hljs-punctuation">(</span><span class="hljs-punctuation">)</span> <span class="hljs-comment">#分块对角矩阵</span><br>diag<span class="hljs-punctuation">(</span><span class="hljs-built_in">c</span><span class="hljs-punctuation">(</span><span class="hljs-number">1</span><span class="hljs-punctuation">,</span> <span class="hljs-number">2</span><span class="hljs-punctuation">,</span> <span class="hljs-number">3</span><span class="hljs-punctuation">)</span><span class="hljs-punctuation">)</span> <span class="hljs-comment"># 生成对角线元素为1, 2, 3的3*3的方阵</span><br>diag<span class="hljs-punctuation">(</span><span class="hljs-number">3.6</span><span class="hljs-punctuation">)</span> <span class="hljs-comment"># 生成对角线元素为1的3*3的方阵</span><br></code></pre></td></tr></table></figure></li>
 </ul>
-<h2 id="3-2-Convex-optimization"><a href="#3-2-Convex-optimization" class="headerlink" title="3.2. Convex optimization"></a>3.2. Convex optimization</h2><ul>
-<li><p>open source solvers<br><code>ECOS</code><br><code>OSQP</code><br><code>SCS</code></p>
+<h2 id="convex-optimization">3.2. Convex optimization</h2>
+<ul>
+<li><p>open source solvers <code>ECOS</code> <code>OSQP</code> <code>SCS</code></p>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://cvxr.rbind.io/cvxr_examples/cvxr_using-other-solvers/">Using Other Solvers</a></p>
-</blockquote>
-</li>
+</blockquote></li>
 </ul>
-<h2 id="3-3-Imputation"><a href="#3-3-Imputation" class="headerlink" title="3.3. Imputation"></a>3.3. Imputation</h2><ul>
-<li><p><strong>Survey</strong></p>
+<h2 id="imputation">3.3. Imputation</h2>
 <ul>
-<li><code>filling</code><br>Filling in the missing entries by softImpute,OptSpace, SVT, etc.<blockquote>
-<p><a target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/filling/index.html">https://cran.r-project.org/web/packages/filling/index.html</a></p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p><strong>Low-rank</strong></p>
+<li><strong>Survey</strong>
+<ul>
+<li><code>filling</code> Filling in the missing entries by softImpute,OptSpace, SVT, etc. &gt; <a target="_blank" rel="noopener" href="https://cran.r-project.org/web/packages/filling/index.html" class="uri">https://cran.r-project.org/web/packages/filling/index.html</a></li>
+</ul></li>
+<li><strong>Low-rank</strong>
 <ul>
 <li><code>softImpute</code></li>
 <li></li>
-</ul>
-</li>
-<li><p><strong>Others</strong></p>
+</ul></li>
+<li><strong>Others</strong>
 <ul>
 <li><code>mice</code></li>
 <li><code>missForest</code></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h2 id="3-4-Variable-selection"><a href="#3-4-Variable-selection" class="headerlink" title="3.4. Variable selection"></a>3.4. Variable selection</h2><ul>
-<li><p><strong>Best subset ($l_0$)</strong></p>
+<h2 id="variable-selection">3.4. Variable selection</h2>
+<ul>
+<li><p><strong>Best subset (<span class="math inline">\(l_0\)</span>)</strong></p>
 <ul>
 <li><p><code>bestsubset</code>——Review</p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs r">library<span class="hljs-punctuation">(</span>devtools<span class="hljs-punctuation">)</span><br>install_github<span class="hljs-punctuation">(</span>repo<span class="hljs-operator">=</span><span class="hljs-string">&quot;ryantibs/best-subset&quot;</span><span class="hljs-punctuation">,</span> subdir<span class="hljs-operator">=</span><span class="hljs-string">&quot;bestsubset&quot;</span><span class="hljs-punctuation">)</span><br><span class="hljs-comment"># 这个野包不好安装，多尝试几次，</span><br><span class="hljs-comment"># 成功响应后会让更新包或者安装依赖的包</span><br><span class="hljs-comment"># 最好实现安装好所有依赖包，再次使用命令安装此包</span><br></code></pre></td></tr></table></figure>
-
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://github.com/ryantibs/best-subset">best-subset下载地址</a></p>
-</blockquote>
-</li>
+</blockquote></li>
 <li><p>·<code>leaps</code></p>
-<p>$n&gt;p, p\leq 30$</p>
-</li>
+<p><span class="math inline">\(n&gt;p, p\leq 30\)</span></p></li>
 <li><p><code>abess</code></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs r">library<span class="hljs-punctuation">(</span>devtools<span class="hljs-punctuation">)</span><br>install_github<span class="hljs-punctuation">(</span>repo <span class="hljs-operator">=</span> <span class="hljs-string">&quot;abess-team/abess&quot;</span><span class="hljs-punctuation">,</span> subdir <span class="hljs-operator">=</span> <span class="hljs-string">&quot;R-package&quot;</span><span class="hljs-punctuation">)</span><br></code></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li><p><strong>Continous surrogates of $l_0$</strong></p>
+</ul></li>
+<li><p><strong>Continous surrogates of <span class="math inline">\(l_0\)</span></strong></p>
 <ul>
-<li><p><code>glmnet</code><br>Lasso, ridge, relaxed lasso</p>
-</li>
-<li><p><code>ncvreg</code><br>Regularization Paths for SCAD and MCP Penalized Regression Models</p>
-</li>
-<li><p><code>ADMM</code><br>Algorithms using Alternating Direction Method of Multipliers</p>
+<li><p><code>glmnet</code> Lasso, ridge, relaxed lasso</p></li>
+<li><p><code>ncvreg</code> Regularization Paths for SCAD and MCP Penalized Regression Models</p></li>
+<li><p><code>ADMM</code> Algorithms using Alternating Direction Method of Multipliers</p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs r">admm.genpenalty<span class="hljs-punctuation">(</span><span class="hljs-punctuation">)</span><br></code></pre></td></tr></table></figure></li>
-</ul>
-</li>
+</ul></li>
 <li><p><strong>Variable selection for correlated covariates</strong></p>
 <ul>
-<li><p><code>FarmSelect</code><br>Factor Adjusted Robust Model Selection</p>
-</li>
+<li><p><code>FarmSelect</code> Factor Adjusted Robust Model Selection</p></li>
 <li><p><code>penreg</code></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs r">library<span class="hljs-punctuation">(</span>devtools<span class="hljs-punctuation">)</span><br>devtools<span class="hljs-operator">::</span>install_github<span class="hljs-punctuation">(</span><span class="hljs-string">&quot;jaredhuling/penreg&quot;</span><span class="hljs-punctuation">)</span><br></code></pre></td></tr></table></figure>
-
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://github.com/jaredhuling/penreg">penreg下载地址</a></p>
-</blockquote>
-</li>
-<li><p><code>likeFADR</code></p>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="https://github.com/feiyoung/likeFADR/">likeFADR下载地址</a></p>
-</blockquote>
-</li>
+</blockquote></li>
+<li><p><code>likeFADR</code> &gt; <a target="_blank" rel="noopener" href="https://github.com/feiyoung/likeFADR/">likeFADR下载地址</a></p></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h2 id="3-5-Variable-fusion"><a href="#3-5-Variable-fusion" class="headerlink" title="3.5. Variable fusion"></a>3.5. Variable fusion</h2><ul>
-<li><p>Discrete optimization</p>
-</li>
+<h2 id="variable-fusion">3.5. Variable fusion</h2>
+<ul>
+<li><p>Discrete optimization</p></li>
 <li><p>Continuous surrogates</p>
 <ul>
 <li><code>Pen</code></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h2 id="3-6-Simulation-and-report"><a href="#3-6-Simulation-and-report" class="headerlink" title="3.6. Simulation and report"></a>3.6. Simulation and report</h2><ul>
-<li><p><code>simutool</code></p>
-</li>
-<li><p><code>mailR</code><br>sendEmail</p>
-</li>
+<h2 id="simulation-and-report">3.6. Simulation and report</h2>
+<ul>
+<li><p><code>simutool</code></p></li>
+<li><p><code>mailR</code> sendEmail</p></li>
 <li><p>公式编辑</p>
 <ul>
-<li><p><code>expression</code>函数（自带）</p>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_40628687/article/details/79280312">R语言作图：数学公式</a></p>
-</blockquote>
-</li>
-<li><p><code>latex2exp</code></p>
-</li>
+<li><p><code>expression</code>函数（自带） &gt; <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_40628687/article/details/79280312">R语言作图：数学公式</a></p></li>
+<li><p><code>latex2exp</code></p></li>
+</ul></li>
+<li><p><code>mailR</code> sendEmail()函数?</p></li>
 </ul>
-</li>
-<li><p><code>mailR</code><br>sendEmail()函数?</p>
-</li>
-</ul>
-<h2 id="3-7-Fast-calculation"><a href="#3-7-Fast-calculation" class="headerlink" title="3.7. Fast calculation"></a>3.7. Fast calculation</h2><ul>
-<li><code>Rcpp</code><ul>
+<h2 id="fast-calculation">3.7. Fast calculation</h2>
+<ul>
+<li><code>Rcpp</code>
+<ul>
 <li><a target="_blank" rel="noopener" href="http://adv-r.had.co.nz/Rcpp.html">Rcpp学习网站</a></li>
-</ul>
-</li>
+</ul></li>
 <li><code>snow</code></li>
 <li><code>foreach</code></li>
 <li><code>doRNG</code></li>
-<li><code>doMC</code><br>for循环外面加seed，可以保证实验的可重复性。但是foreach不可以，需要加上doRNG。此外，即使用同样的随机数种子，加上doRNG，for循环和foreach循环的结果也不一样。</li>
+<li><code>doMC</code> for循环外面加seed，可以保证实验的可重复性。但是foreach不可以，需要加上doRNG。此外，即使用同样的随机数种子，加上doRNG，for循环和foreach循环的结果也不一样。</li>
 </ul>
-<h2 id="3-8-Optimization-tools"><a href="#3-8-Optimization-tools" class="headerlink" title="3.8. Optimization tools"></a>3.8. Optimization tools</h2><ul>
-<li><code>ManifoldOptim</code><br>An R Interface to the ROPTLIB Library for Riemannian Manifold Optimization</li>
-<li><code>GrassmannOptim</code><br>An R-package for optimization on the Grassmann manifold</li>
+<h2 id="optimization-tools">3.8. Optimization tools</h2>
+<ul>
+<li><code>ManifoldOptim</code> An R Interface to the ROPTLIB Library for Riemannian Manifold Optimization</li>
+<li><code>GrassmannOptim</code> An R-package for optimization on the Grassmann manifold</li>
 </ul>
-<h2 id="3-9-Discrete-optimization"><a href="#3-9-Discrete-optimization" class="headerlink" title="3.9. Discrete optimization"></a>3.9. Discrete optimization</h2><ul>
+<h2 id="discrete-optimization">3.9. Discrete optimization</h2>
+<ul>
 <li><code>gurobi</code></li>
 <li><code>rgurobi</code></li>
 </ul>
-<h1 id="4-gurobi包安装"><a href="#4-gurobi包安装" class="headerlink" title="4. gurobi包安装"></a>4. gurobi包安装</h1><ul>
-<li><p>Window安装gurobi<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/212191049">https://zhuanlan.zhihu.com/p/212191049</a></p>
+<h1 id="gurobi包安装">4. gurobi包安装</h1>
+<ul>
+<li><p>Window安装gurobi <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/212191049" class="uri">https://zhuanlan.zhihu.com/p/212191049</a></p>
 <ul>
 <li>grbgetkey： xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx</li>
-</ul>
-</li>
+</ul></li>
 <li><p>Linux安装</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 1. cd 到gurobi安装包目录，并解压安装包</span><br>tar -xzvf gurobi9.1.2_linux64.tar_2.gz<br><span class="hljs-comment"># 2. 配置环境变量</span><br>打开~/.bashrc，在最后添加<br><span class="hljs-built_in">export</span> GUROBI_HOME=<span class="hljs-string">&quot;/home/jiangzihao/gurobi912/linux64&quot;</span><br><span class="hljs-built_in">export</span> PATH=<span class="hljs-string">&quot;<span class="hljs-variable">$&#123;PATH&#125;</span>:<span class="hljs-variable">$&#123;GUROBI_HOME&#125;</span>/bin&quot;</span><br><span class="hljs-built_in">export</span> LD_LIBRARY_PATH=<span class="hljs-string">&quot;<span class="hljs-variable">$&#123;LD_LIBRARY_PATH&#125;</span>:<span class="hljs-variable">$&#123;GUROBI_HOME&#125;</span>/lib&quot;</span><br>然后<span class="hljs-built_in">source</span> ~/.bashrc，使路径生效<br><span class="hljs-comment"># 3. 输入序列号</span><br><span class="hljs-built_in">cd</span> /home/jiangzihao/gurobi912/linux64/bin<br>./grbgetkey<br>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx <span class="hljs-comment">#72上的序列号</span><br><span class="hljs-comment"># 输入序列号</span><br><span class="hljs-comment"># 获取序列号的方式见windos版本</span><br><span class="hljs-comment"># 4. License存放位置</span><br><span class="hljs-comment"># 将license（名称gurobi.lic）放到/home/jiangzihao/gurobi912/目录下</span><br><span class="hljs-comment"># 5. R里面安装gurobi包</span><br>install.packages(<span class="hljs-string">&quot;/home/jiangzihao/gurobi912/linux64/R/gurobi_9.1-2_R_4.0.2.tar.gz&quot;</span>, repo = NULL, <span class="hljs-built_in">type</span> = <span class="hljs-string">&quot;source&quot;</span>)<br></code></pre></td></tr></table></figure>
 <blockquote>
-<ol>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_37756072/article/details/114499491">https://blog.csdn.net/m0_37756072/article/details/114499491</a></li>
-<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/79524375">https://zhuanlan.zhihu.com/p/79524375</a></li>
+<ol type="1">
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_37756072/article/details/114499491" class="uri">https://blog.csdn.net/m0_37756072/article/details/114499491</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/79524375" class="uri">https://zhuanlan.zhihu.com/p/79524375</a></li>
 <li><a target="_blank" rel="noopener" href="https://cdn.gurobi.com/wp-content/plugins/hd_documentations/documentation/9.0/quickstart_linux.pdf">官方教程</a></li>
 </ol>
-</blockquote>
-</li>
+</blockquote></li>
 <li><p>安装包更新</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> /home/jiangzihao/gurobi912/linux64/bin<br>./grbgetkey<br>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx<br></code></pre></td></tr></table></figure>
-
-<p>若学校IP未申请校园认证，申请许可，参考自<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43502284/article/details/114598618">https://blog.csdn.net/qq_43502284/article/details/114598618</a></p>
-</li>
+<p>若学校IP未申请校园认证，申请许可，参考自 <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43502284/article/details/114598618" class="uri">https://blog.csdn.net/qq_43502284/article/details/114598618</a></p></li>
 </ul>
-<h1 id="5-创建R包"><a href="#5-创建R包" class="headerlink" title="5. 创建R包"></a>5. 创建R包</h1><ul>
+<h1 id="创建r包">5. 创建R包</h1>
+<ul>
 <li><a target="_blank" rel="noopener" href="https://www.bioinfo-scrounger.com/archives/546/">如何快速写一个R包</a></li>
 <li><a target="_blank" rel="noopener" href="https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-the-RStudio-IDE">Developing Packages with the RStudio IDE</a></li>
 <li><a target="_blank" rel="noopener" href="https://support.rstudio.com/hc/en-us/articles/200486508-Building-Testing-and-Distributing-Packages">Building, Testing, and Distributing Packages</a></li>
@@ -422,6 +399,24 @@
             <div>
               <div class="post-metas mb-3">
                 
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E7%BC%96%E7%A8%8B/">编程</a>
+                    
+                      <a class="hover-with-bg" href="/categories/%E7%BC%96%E7%A8%8B/R/">R</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/R/">R</a>
+                    
+                      <a class="hover-with-bg" href="/tags/R-package/">R package</a>
+                    
+                  </div>
                 
               </div>
               
@@ -648,6 +643,48 @@
 
 
 
+
+  
+
+  
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        loader: {
+          load: ['ui/lazy']
+        },
+        options: {
+          renderActions: {
+            findScript: [10, doc => {
+              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = { node: text, delim: '', n: 0 };
+                math.end = { node: text, delim: '', n: 0 };
+                doc.math.push(math);
+              });
+            }, '', false],
+            insertedScript: [200, () => {
+              document.querySelectorAll('mjx-container').forEach(node => {
+                let target = node.parentNode;
+                if (target.nodeName.toLowerCase() === 'li') {
+                  target.parentNode.classList.add('has-jax');
+                }
+              });
+            }, '', false]
+          }
+        }
+      };
+    </script>
+
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" ></script>
+
+  
 
 
 
