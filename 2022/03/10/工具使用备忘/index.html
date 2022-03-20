@@ -198,7 +198,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      2.1k 字
+      undefined 字
     </span>
   
 
@@ -207,7 +207,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      18 分钟
+      NaN 分钟
     </span>
   
 
@@ -268,7 +268,7 @@
 </ul>
 <h1 id="2-安装texlive和texstudio"><a class="markdownIt-Anchor" href="#2-安装texlive和texstudio"></a> 2. 安装TeXlive和TeXstudio</h1>
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/138586028">https://zhuanlan.zhihu.com/p/138586028</a></p>
-<figure class="highlight r"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><pre><code class="hljs r">.libPaths<span class="hljs-punctuation">(</span><span class="hljs-punctuation">)</span><br><span class="hljs-string">&quot;D:/Program Files (x86)/R/R-4.1.1/library&quot;</span><br><span class="hljs-string">&quot;D:/Program Files (x86)/Anaconda3/envs/r_env/lib/R/library&quot;</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.libPaths<span class="punctuation">(</span><span class="punctuation">)</span></span><br><span class="line"><span class="string">&quot;D:/Program Files (x86)/R/R-4.1.1/library&quot;</span></span><br><span class="line"><span class="string">&quot;D:/Program Files (x86)/Anaconda3/envs/r_env/lib/R/library&quot;</span></span><br></pre></td></tr></table></figure>
 <h1 id="3-快速下载网络文件或百度云盘内容"><a class="markdownIt-Anchor" href="#3-快速下载网络文件或百度云盘内容"></a> 3. 快速下载网络文件或百度云盘内容</h1>
 <ul>
 <li><strong>IDM</strong>
@@ -301,16 +301,16 @@
 </li>
 <li>
 <p>本地主机生成密钥到文件名id_rs</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> C:\Users\jiangzihao\.ssh<br>ssh-keygen<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> C:\Users\jiangzihao\.ssh</span><br><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure>
 <p>ssh localhost</p>
 </li>
 <li>
 <p>本地主机密钥上传到跳板机</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 将主机的id_rs.pub文件上传到跳板机</span><br><span class="hljs-built_in">cd</span> ~/.ssh<br><span class="hljs-built_in">cat</span> ~/.ssh/id_rs.pub &gt;&gt; authorized_keys<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将主机的id_rs.pub文件上传到跳板机</span></span><br><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br><span class="line"><span class="built_in">cat</span> ~/.ssh/id_rs.pub &gt;&gt; authorized_keys</span><br></pre></td></tr></table></figure>
 </li>
 <li>
 <p>主机密钥上传到跳板机，并生成密钥到jump</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> ~/.ssh<br><span class="hljs-built_in">cat</span> ~/.ssh/id_rs.pub &gt;&gt; authorized_keys<br>ssh-keygen<br>jump<br><span class="hljs-comment"># Enter</span><br><span class="hljs-comment"># Enter</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br><span class="line"><span class="built_in">cat</span> ~/.ssh/id_rs.pub &gt;&gt; authorized_keys</span><br><span class="line">ssh-keygen</span><br><span class="line">jump</span><br><span class="line"><span class="comment"># Enter</span></span><br><span class="line"><span class="comment"># Enter</span></span><br></pre></td></tr></table></figure>
 <p><code>bash ssh localhost # 服务器没有.ssh文件夹时输入这一步</code></p>
 </li>
 <li>
@@ -319,7 +319,7 @@
 </li>
 <li>
 <p>VScode配置</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs bash">Host 33<br>HostName 10.8.xxx.33<br>User jiangzihao<br>Port 5xx22<br>IdentityFile C:\Users\jiangzihao\.ssh\id_rs<br><br>Host 71<br>HostName 10.8.xxx.71<br>User jiangzihao<br>Port 22<br>ProxyCommand ssh -W %h:%p 33<br>IdentityFile C:\Users\jiangzihao\.ssh\jump<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Host 33</span><br><span class="line">HostName 10.8.xxx.33</span><br><span class="line">User jiangzihao</span><br><span class="line">Port 5xx22</span><br><span class="line">IdentityFile C:\Users\jiangzihao\.ssh\id_rs</span><br><span class="line"></span><br><span class="line">Host 71</span><br><span class="line">HostName 10.8.xxx.71</span><br><span class="line">User jiangzihao</span><br><span class="line">Port 22</span><br><span class="line">ProxyCommand ssh -W %h:%p 33</span><br><span class="line">IdentityFile C:\Users\jiangzihao\.ssh\jump</span><br></pre></td></tr></table></figure>
 <p>参考自 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/452863155">知乎-VScode ssh免密配置</a></p>
 </li>
 </ul>
@@ -332,8 +332,7 @@
 </li>
 <li>
 <p>脚注<br />
-Here’s a sentence with a footnote. <sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="This is the footnote.
-">[1]</span></a></sup></p>
+Here’s a sentence with a footnote. <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
 </li>
 <li>
 <p>标题编号<br />
@@ -362,7 +361,7 @@ Here’s a sentence with a footnote. <sup id="fnref:1" class="footnote-ref"><a h
 <h2 id="71-git插件"><a class="markdownIt-Anchor" href="#71-git插件"></a> 7.1. Git插件</h2>
 <p>自带</p>
 <h2 id="72-git命令"><a class="markdownIt-Anchor" href="#72-git命令"></a> 7.2. Git命令</h2>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs git">git init # 初始化仓库<br>git add # 添加文件到仓库  <br>git commit -m &quot;代码注释&quot;# 将暂存区的文件都添加到仓库<br>git push origin master<br><br><br># 其他<br>git status # 查看仓库当前的状态，显示有表更的文件<br>git diff # 比较文件的不同，即暂存区和工作区的差异<br>git reset # 回退版本<br>git rm # 删除工作区文件<br>git mv # 移动或重命名工作区文件<br>git log #查看历史提交记录<br>git blame # 以列表形式查看指定文件的历史修改记录<br>git remote #远程仓库操作<br>git fetch # 从远程获取代码块库<br>git pull # 下载远程代码并合并<br>git push # 上床远程代码并合并<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">git init # 初始化仓库</span><br><span class="line">git add # 添加文件到仓库  </span><br><span class="line">git commit -m &quot;代码注释&quot;# 将暂存区的文件都添加到仓库</span><br><span class="line">git push origin master</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 其他</span><br><span class="line">git status # 查看仓库当前的状态，显示有表更的文件</span><br><span class="line">git diff # 比较文件的不同，即暂存区和工作区的差异</span><br><span class="line">git reset # 回退版本</span><br><span class="line">git rm # 删除工作区文件</span><br><span class="line">git mv # 移动或重命名工作区文件</span><br><span class="line">git log #查看历史提交记录</span><br><span class="line">git blame # 以列表形式查看指定文件的历史修改记录</span><br><span class="line">git remote #远程仓库操作</span><br><span class="line">git fetch # 从远程获取代码块库</span><br><span class="line">git pull # 下载远程代码并合并</span><br><span class="line">git push # 上床远程代码并合并</span><br></pre></td></tr></table></figure>
 <h1 id="8-文献查找与管理"><a class="markdownIt-Anchor" href="#8-文献查找与管理"></a> 8. 文献查找与管理</h1>
 <h2 id="81-文献查找技巧"><a class="markdownIt-Anchor" href="#81-文献查找技巧"></a> 8.1. 文献查找技巧</h2>
 <ul>
@@ -382,8 +381,14 @@ Here’s a sentence with a footnote. <sup id="fnref:1" class="footnote-ref"><a h
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/cmusunqi/article/details/98734942">linux下运行r脚本</a></p>
 </li>
 </ul>
-<section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>This is the footnote.
-<a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>
+<hr class="footnotes-sep" />
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>This is the footnote. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
             </div>
             <hr>
             <div>
