@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>办公小技巧</title>
+    <link href="/2022/05/26/%E5%8A%9E%E5%85%AC%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    <url>/2022/05/26/%E5%8A%9E%E5%85%AC%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
+    
+    <content type="html"><![CDATA[<h1 id="1-windows"><a class="markdownIt-Anchor" href="#1-windows"></a> 1. Windows</h1><ul><li>快捷创建某个目录的cmd命令窗口</li></ul><h1 id="2-excel-word"><a class="markdownIt-Anchor" href="#2-excel-word"></a> 2. Excel &amp; Word</h1><ul><li><p><strong>常用快捷键</strong></p><figure class="highlight plaintext"><figcaption><span>剪贴</span></figcaption><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><pre><code class="hljs Ctrl```+```T```">  ```Ctrl```+```A``` 全选，可以选中整个sheet，也可以全选sheet中有内容的部分<br><br>* **多个单元格的内容合并到一个单元格**<br>  ```bash<br>  =PHONETIC(H1:H4) # 合并H1:H4的内容<br></code></pre></td></tr></table></figure></li><li><p><strong>Word</strong><br /><code>^l</code>: 下箭头<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>↓</mo></mrow><annotation encoding="application/x-tex">\downarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mrel">↓</span></span></span></span><br /><code>^p</code>: 回车键盘</p></li></ul>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>优秀个人网站合集</title>
     <link href="/2022/05/22/%E4%BC%98%E7%A7%80%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E5%90%88%E9%9B%86/"/>
     <url>/2022/05/22/%E4%BC%98%E7%A7%80%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E5%90%88%E9%9B%86/</url>
