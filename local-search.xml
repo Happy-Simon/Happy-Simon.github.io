@@ -59,7 +59,7 @@
     <link href="/2022/03/22/Latex%E7%9B%B8%E5%85%B3/"/>
     <url>/2022/03/22/Latex%E7%9B%B8%E5%85%B3/</url>
     
-    <content type="html"><![CDATA[<p>Latex相关的一些笔记</p><span id="more"></span><p>查询包的教程</p><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># Windows 打开cmd</span><br><span class="hljs-built_in">cd</span> d/ d: <span class="hljs-comment"># cd到tex的安装目录</span><br>texdoc arydshln <span class="hljs-comment">#查看arydshln包的文档教程</span><br></code></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<ul><li><p>查询包的教程</p>  <figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># Windows 打开cmd</span><br><span class="hljs-built_in">cd</span> d/ d: <span class="hljs-comment"># cd到tex的安装目录</span><br>texdoc arydshln <span class="hljs-comment">#查看arydshln包的文档教程</span><br></code></pre></td></tr></table></figure></li><li><p><a href="https://www.latexstudio.net/hulatex/index.htm">Texstudio官方文档</a></p></li><li><p>其他<br /><a href="https://github.com/OopsYao/swufethesis">西南财经大学学位论文LaTeX模板</a></p></li></ul>]]></content>
     
     
     
