@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>R编程备查</title>
+    <link href="/2022/06/04/R%E7%BC%96%E7%A8%8B%E5%A4%87%E6%9F%A5/"/>
+    <url>/2022/06/04/R%E7%BC%96%E7%A8%8B%E5%A4%87%E6%9F%A5/</url>
+    
+    <content type="html"><![CDATA[<ul><li><strong>处理循环中的报错</strong><figure class="highlight r"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></div></td><td class="code"><pre><code class="hljs R">result <span class="hljs-operator">=</span> tryCatch<span class="hljs-punctuation">(</span><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-comment">#正常的逻辑</span><br>  expr<br><span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span> warning <span class="hljs-operator">=</span> <span class="hljs-keyword">function</span><span class="hljs-punctuation">(</span>w<span class="hljs-punctuation">)</span> <span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-comment">#出现warning的处理逻辑</span><br>    warning<span class="hljs-operator">-</span>handler<span class="hljs-operator">-</span>code<br><span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span> error <span class="hljs-operator">=</span> <span class="hljs-keyword">function</span><span class="hljs-punctuation">(</span>e<span class="hljs-punctuation">)</span> <span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-comment">#出现error的处理逻辑</span><br>    error<span class="hljs-operator">-</span>handler<span class="hljs-operator">-</span>code<br><span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span> finally <span class="hljs-operator">=</span> <span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-comment">#不管出现异常还是正常都会执行的代码模块，</span><br>    <span class="hljs-comment">#一般用来处理清理操作，例如关闭连接资源等。</span><br>    cleanup<span class="hljs-operator">-</span>code<br><span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">)</span><br></code></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>编程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>编程</tag>
+      
+      <tag>R</tag>
+      
+      <tag>R package</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>办公小技巧</title>
     <link href="/2022/05/26/%E5%8A%9E%E5%85%AC%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
     <url>/2022/05/26/%E5%8A%9E%E5%85%AC%E5%B0%8F%E6%8A%80%E5%B7%A7/</url>
@@ -117,7 +146,7 @@
     <link href="/2022/03/10/Matlab%E7%9B%B8%E5%85%B3/"/>
     <url>/2022/03/10/Matlab%E7%9B%B8%E5%85%B3/</url>
     
-    <content type="html"><![CDATA[<h1 id="1-matlab安装toolbox"><a class="markdownIt-Anchor" href="#1-matlab安装toolbox"></a> 1. MATLAB安装toolbox</h1>  <figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># step1: Download Manopt toobox</span><br><span class="hljs-comment"># step2: Unzip and copy the whole manopt directory you just downloaded in a location of your choice, say, in /my/directory/.</span><br><span class="hljs-comment"># step3: Go to /my/directory/manopt/ at the Matlab prompt and execute importmanopt.</span><br><span class="hljs-comment"># You may save this path for your next Matlab sessions (via savepath)</span><br></code></pre></td></tr></table></figure><p>参考自<br /><a href="https://www.manopt.org/tutorial.html#firstexample">https://www.manopt.org/tutorial.html#firstexample</a></p><h1 id="2-matlab常用工具包"><a class="markdownIt-Anchor" href="#2-matlab常用工具包"></a> 2. Matlab常用工具包</h1><ul><li><code>Manopt</code></li><li><code>STOP</code><br /><a href="https://stmopt.gitee.io/tutorial.html">https://stmopt.gitee.io/tutorial.html</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="1-教程"><a class="markdownIt-Anchor" href="#1-教程"></a> 1. 教程</h1><h1 id="2-matlab工具包"><a class="markdownIt-Anchor" href="#2-matlab工具包"></a> 2. MATLAB工具包</h1><ul><li><p><strong>MATLAB安装toolbox</strong></p><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># step1: Download Manopt toobox</span><br><span class="hljs-comment"># step2: Unzip and copy the whole manopt directory you just downloaded in a location of your choice, say, in /my/directory/.</span><br><span class="hljs-comment"># step3: Go to /my/directory/manopt/ at the Matlab prompt and execute importmanopt.</span><br><span class="hljs-comment"># You may save this path for your next Matlab sessions (via savepath)</span><br></code></pre></td></tr></table></figure><p>参考自<br /><a href="https://www.manopt.org/tutorial.html#firstexample">https://www.manopt.org/tutorial.html#firstexample</a></p></li><li><p><strong>Matlab常用工具包</strong></p><ul><li><code>Manopt</code></li><li><code>STOP</code><br /><a href="https://stmopt.gitee.io/tutorial.html">https://stmopt.gitee.io/tutorial.html</a></li></ul></li></ul>]]></content>
     
     
     <categories>
