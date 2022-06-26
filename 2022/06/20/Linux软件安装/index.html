@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2022/06/20/Linux%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%B8%8A%E4%BC%A0%E8%BF%9B%E5%BA%A6%E6%9D%A1.png">
 <meta property="article:published_time" content="2022-06-20T09:54:44.000Z">
-<meta property="article:modified_time" content="2022-06-21T07:51:26.504Z">
+<meta property="article:modified_time" content="2022-06-26T21:43:00.475Z">
 <meta property="article:author" content="Black">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/2022/06/20/Linux%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/%E4%B8%8A%E4%BC%A0%E8%BF%9B%E5%BA%A6%E6%9D%A1.png">
@@ -198,7 +198,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      6.7k 字
+      7.1k 字
     </span>
   
 
@@ -207,7 +207,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      56 分钟
+      60 分钟
     </span>
   
 
@@ -248,7 +248,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2022年6月21日 下午
+                  本文最后更新于：2022年6月27日 凌晨
                 
               </p>
             
@@ -367,6 +367,10 @@ setp1：下载anaconda<br />
 <h2 id="52-vscode配置r"><a class="markdownIt-Anchor" href="#52-vscode配置r"></a> 5.2. VScode配置R</h2>
 <ul>
 <li>
+<p>整体配置可参考<br />
+<a target="_blank" rel="noopener" href="https://github.com/REditorSupport/vscode-R/wiki/Installation:-Linux">https://github.com/REditorSupport/vscode-R/wiki/Installation:-Linux</a></p>
+</li>
+<li>
 <p>Step1: VScode安装<br />
 搜索网上教程</p>
 </li>
@@ -374,9 +378,9 @@ setp1：下载anaconda<br />
 <p>Step2: R中安装R包<code>languageserver</code><br />
 激活R后安装R包<code>languageserver</code></p>
   <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs r">install.packages<span class="hljs-punctuation">(</span><span class="hljs-string">&quot;languageserver&quot;</span><span class="hljs-punctuation">)</span><br>install.packages<span class="hljs-punctuation">(</span><span class="hljs-string">&quot;jsonlite&quot;</span><span class="hljs-punctuation">)</span> <span class="hljs-comment"># 用于图形界面</span><br>library<span class="hljs-punctuation">(</span>languageserver<span class="hljs-punctuation">)</span> <span class="hljs-comment">#测试</span><br></code></pre></td></tr></table></figure>
-<p>注意可能会报错，说需要安装相依赖的包<code>stringi</code>, <code>knitr</code>, <code>lintr</code>, <code>roxygen2</code>, 那么先安装这些依赖包，然后重新安装<code>languageserver</code>包<br />
+<p>注意可能会报错，说需要安装相依赖的包<code>stringi</code>, 那么先安装依赖包，然后重新安装<code>languageserver</code>包<br />
 使用conda安装R包成功率更高，且更快</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs conda">conda install r-stringi<br>conda install r-knitr<br>conda install r-lintr<br>conda install r-roxygen2<br></code></pre></td></tr></table></figure>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs conda">conda install r-stringi<br></code></pre></td></tr></table></figure>
 </li>
 <li>
 <p>Step3: conda安装radian</p>
@@ -393,7 +397,10 @@ setp1：下载anaconda<br />
 <li>
 <p>寻找R和radian路经</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda activate r_env <span class="hljs-comment">#激活R所在的环境</span><br><span class="hljs-built_in">which</span> R <span class="hljs-comment">#查找R所在目录</span><br>conda activate r_env <span class="hljs-comment">#激活radian所在环境</span><br><span class="hljs-built_in">which</span> radian <span class="hljs-comment">#查找radian所在目录</span><br></code></pre></td></tr></table></figure>
-<p>假设得到<code>R</code>的目录<br />
+</li>
+<li>
+<p>勾选必要条目<br />
+假设得到<code>R</code>的目录<br />
 <code>/home/ubuntu/anaconda3/envs/r_env/bin/R</code><br />
 然后在VScode中为<code>Rpath: Linux</code>添加此目录<br />
 得到<code>radian</code>的目录<br />
@@ -401,9 +408,15 @@ setp1：下载anaconda<br />
 然后再VScode中为<code>Rterm: Linux</code>添加此目录<br />
 勾选<code>R: Bracketed Paste</code></p>
 <blockquote>
-<p>如果不勾选，Radian则无法使用<br />
-勾选<code>R: Always Use ActiveTerminal</code><br />
-否则快捷键<code>ctrl</code>+<code>Enter</code>运行R代码，总会打开新的终端。</p>
+<p>如果不勾选，Radian则无法使用</p>
+</blockquote>
+<p>勾选<code>R: Always Use ActiveTerminal</code></p>
+<blockquote>
+<p>否则快捷键<code>ctrl</code>+<code>Enter</code>运行R代码，总会打开新的终端。</p>
+</blockquote>
+<p>勾选<code>R: Session Watcher</code></p>
+<blockquote>
+<p>为了看到绘制的图形</p>
 </blockquote>
 </li>
 <li>
@@ -411,6 +424,15 @@ setp1：下载anaconda<br />
 –no-save;<br />
 -no-restore;<br />
 –no-site-file(如果有的话)</p>
+</li>
+<li>
+<p>存在多个版本的R，指定R版本（通过前文的<code>Rpath: Linux</code>指定），并像Rstudio一样丝滑使用R（查看数据、绘图等）<br />
+新建<code>.Rprofile</code>文件，并在其中写入</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs r">source<span class="hljs-punctuation">(</span>file.path<span class="hljs-punctuation">(</span>Sys.getenv<span class="hljs-punctuation">(</span><br><span class="hljs-keyword">if</span> <span class="hljs-punctuation">(</span>.Platform<span class="hljs-operator">$</span>OS.type <span class="hljs-operator">==</span> <span class="hljs-string">&quot;windows&quot;</span><span class="hljs-punctuation">)</span> <span class="hljs-string">&quot;USERPROFILE&quot;</span> <span class="hljs-keyword">else</span> <span class="hljs-string">&quot;HOME&quot;</span><span class="hljs-punctuation">)</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;.vscode-R&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-string">&quot;init.R&quot;</span><span class="hljs-punctuation">)</span><span class="hljs-punctuation">)</span><br></code></pre></td></tr></table></figure>
+<p>这样指定的R例如，某conda环境下的R，也可以View(data), plot(1:10, 1:10)。而不是只有共有环境（base）的R有这些功能。</p>
+<blockquote>
+<p>此条参考自<a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1972408">https://cloud.tencent.com/developer/article/1972408</a></p>
+</blockquote>
 </li>
 </ul>
 </li>
