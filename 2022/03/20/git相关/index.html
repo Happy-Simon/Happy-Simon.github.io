@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2022/03/20/git%E7%9B%B8%E5%85%B3/%E4%B8%8A%E4%BC%A0%E8%BF%9B%E5%BA%A6%E6%9D%A1.png">
 <meta property="article:published_time" content="2022-03-20T10:31:26.000Z">
-<meta property="article:modified_time" content="2022-06-14T11:11:38.357Z">
+<meta property="article:modified_time" content="2022-06-25T07:18:25.571Z">
 <meta property="article:author" content="Black">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/2022/03/20/git%E7%9B%B8%E5%85%B3/%E4%B8%8A%E4%BC%A0%E8%BF%9B%E5%BA%A6%E6%9D%A1.png">
@@ -198,7 +198,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.8k 字
+      1.9k 字
     </span>
   
 
@@ -207,7 +207,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      15 分钟
+      16 分钟
     </span>
   
 
@@ -248,7 +248,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2022年6月14日 晚上
+                  本文最后更新于：2022年6月25日 下午
                 
               </p>
             
@@ -280,7 +280,7 @@
 </li>
 <li>
 <p>服务器第一次上传代码到github仓库</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> Project/Simulation<br>git init<br>git add . <span class="hljs-comment"># 添加当前目录下的所有文件</span><br>git commit -m <span class="hljs-string">&quot;Simulation-VariableFusion&quot;</span><br>git remote add VariableFusion http://github.com/Happy-Simon/Simulation-VariableFsuion <span class="hljs-comment"># 本地仓库关联到上面创建的github仓库。</span><br><span class="hljs-comment"># 如果前面设置免密登陆github，就用这个，而且貌似从2021年8月13日某起，都是这种方式登录。</span><br>git remote <span class="hljs-built_in">rm</span> VariableFusion <span class="hljs-comment"># 如果已有创建好的仓库，会显示 remote origin already exists, 可以用这个命令移除origin仓库</span><br>git push -u VariableFusion master <span class="hljs-comment"># 将仓库origin上传到github远程仓库</span><br></code></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> Project/Simulation<br>git init<br>git add . <span class="hljs-comment"># 添加当前目录下的所有文件</span><br>git config --global user.email <span class="hljs-string">&quot;you@example.com&quot;</span> <br>git config --global user.name <span class="hljs-string">&quot;Your Name&quot;</span><br>git commit -m <span class="hljs-string">&quot;Simulation-VariableFusion&quot;</span><br>git remote add local-SHVF http://github.com/Happy-Simon/Simulation-VariableFsuion <span class="hljs-comment"># 本地仓库关联到上面创建的github仓库。</span><br><span class="hljs-comment"># 如果前面设置免密登陆github，就用这个，而且貌似从2021年8月13日某起，都是这种方式登录。</span><br>git remote <span class="hljs-built_in">rm</span> VariableFusion <span class="hljs-comment"># 如果已有创建好的仓库，会显示 remote origin already exists, 可以用这个命令移除origin仓库</span><br>git push -u VariableFusion master <span class="hljs-comment"># 将仓库origin上传到github远程仓库</span><br></code></pre></td></tr></table></figure>
 </li>
 <li>
 <p>更新代码后上传到github</p>
