@@ -16,21 +16,38 @@
   <meta name="author" content="Black">
   <meta name="keywords" content="">
   
-    <meta name="description" content="黑黑的个人博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="黑黑">
-<meta property="og:url" content="http://example.com/page/2/index.html">
+    <meta name="description" content="Windows下安装Miniconda、python、tensorflow、pytorth">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows系统安装Miniconda和Python系列软件">
+<meta property="og:url" content="http://example.com/2022/07/26/Windows%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Miniconda%E5%92%8CPython%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6/index.html">
 <meta property="og:site_name" content="黑黑">
-<meta property="og:description" content="黑黑的个人博客">
+<meta property="og:description" content="Windows下安装Miniconda、python、tensorflow、pytorth">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-07-26T07:38:25.000Z">
+<meta property="article:modified_time" content="2022-07-27T04:40:26.120Z">
 <meta property="article:author" content="Black">
 <meta name="twitter:card" content="summary_large_image">
   
   
-  <title>黑黑</title>
+  <title>Windows系统安装Miniconda和Python系列软件 - 黑黑</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -57,7 +74,7 @@
 
 
 <body>
-  <header style="height: 100vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -158,17 +175,55 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="浮生叁记：学习、生活、工作">
+            <span class="h2" id="subtitle" title="Windows系统安装Miniconda和Python系列软件">
               
             </span>
 
             
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-07-26 15:38" pubdate>
+        2022年7月26日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      674 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      6 分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-page-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
           </div>
 
-          
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
           
         </div>
       </div>
@@ -177,243 +232,152 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Windows系统安装Miniconda和Python系列软件</h1>
+            
+              <p class="note note-info">
                 
-
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/05/22/%E4%B8%AD%E5%BF%83%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8/" target="_self">
-          中心服务器使用
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/05/22/%E4%B8%AD%E5%BF%83%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8/" target="_self">
-          
-          此内容已加密，需要密码才能访问。
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-05-22 13:09" pubdate>
-              2022-05-22 13:09:02
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
+                  本文最后更新于：2022年7月27日 下午
+                
+              </p>
             
-              <a href="/categories/Ling-s-Lab/">Ling's Lab</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
+            <div class="markdown-body">
+              <h1 id="1-下载并安装miniconda"><a class="markdownIt-Anchor" href="#1-下载并安装miniconda"></a> 1. 下载并安装Miniconda</h1>
+<ol>
+<li>
+<p>下载安装包<br />
+国内使用清华镜像下载更快<br />
+<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/?C=M&amp;O=D">https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/?C=M&amp;O=D</a></p>
+<blockquote>
+<p>Windows为x64的下载64的版本</p>
+</blockquote>
+</li>
+<li>
+<p>安装Miniconda<br />
+一路Next</p>
+</li>
+<li>
+<p>配置CMD打开conda<br />
+将<code>Scripts</code>文件夹地址添加到系统环境变量、用户环境变量，例如该文件夹的地址为<code>D:\ProgramData\Miniconda3\Scripts</code></p>
+<blockquote>
+<p>可用<code>uTools</code>快速打开用户环境变量、系统环境变量</p>
+</blockquote>
+</li>
+<li>
+<p>重启电脑后生效</p>
+</li>
+<li>
+<p>测试</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> d/ d:<br>conda activate<br>python <span class="hljs-comment"># 若python能够征程激活，说明安装成功</span><br><span class="hljs-built_in">exit</span>() <span class="hljs-comment"># 推出python环境</span><br></code></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="2-创建新环境并安装python"><a class="markdownIt-Anchor" href="#2-创建新环境并安装python"></a> 2. 创建新环境并安装Python</h1>
+<ul>
+<li>
+<p>添加清华镜像源</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda config --get channels <span class="hljs-comment"># 查看已有镜像</span><br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/ <span class="hljs-comment"># 添加镜像</span><br>conda config --remove channels <span class="hljs-string">&#x27;conda-forge&#x27;</span> <span class="hljs-comment"># 移除镜像</span><br></code></pre></td></tr></table></figure>
+</li>
+<li>
+<p>创建python环境并安装python3.9</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda create -n python39 python=3.9 <span class="hljs-comment"># 安装指定版本的python</span><br>conda activate python39 <span class="hljs-comment"># 激活环境</span><br>python <span class="hljs-comment"># 测试</span><br></code></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="3-vscode配置python"><a class="markdownIt-Anchor" href="#3-vscode配置python"></a> 3. Vscode配置Python</h1>
+<h1 id="4-安装常用包"><a class="markdownIt-Anchor" href="#4-安装常用包"></a> 4. 安装常用包</h1>
+<p><code>numpy</code>, <code>pandas</code>, <code>matplotlib</code>, <code>tqdm</code></p>
 
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/05/22/%E4%BC%98%E7%A7%80%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E5%90%88%E9%9B%86/" target="_self">
-          优秀个人网站合集
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/05/22/%E4%BC%98%E7%A7%80%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E5%90%88%E9%9B%86/" target="_self">
-          
-          Hexo学习 Justlovesmile
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-05-22 17:55" pubdate>
-              2022-05-22 17:55:34
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/05/22/Hexo%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/" target="_self">
-          Hexo学习之路
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/05/22/Hexo%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/" target="_self">
-          
-          Hexo新手配置之路
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-05-22 14:01" pubdate>
-              2022-05-22 14:01:22
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/03/10/test-my-site/" target="_self">
-          GitHub+Hexo 搭建个人网站
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/03/10/test-my-site/" target="_self">
-          
-          1. 搭建服务器 搭建网站时参考了两篇资料
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-03-10 17:08" pubdate>
-              2022-03-10 17:08:44
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/03/10/hello-world/" target="_self">
-          Hello World
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/03/10/hello-world/" target="_self">
-          
-          Hexo的一些基本操作
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-03-10 17:06" pubdate>
-              2022-03-10 17:06:11
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2022/03/10/%E6%96%87%E7%8C%AE%E6%A2%B3%E7%90%86/" target="_self">
-          文献梳理
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2022/03/10/%E6%96%87%E7%8C%AE%E6%A2%B3%E7%90%86/" target="_self">
-          
-          
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-03-10 21:07" pubdate>
-              2022-03-10 21:07:20
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-
-
-  <nav aria-label="navigation">
-    <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </span>
-  </nav>
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/06/20/Linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/">
+                        <span class="hidden-mobile">Linux软件安装</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"ol76mhwbwiN4wCvzYwrelxL9-gzGzoHsz","appKey":"DpaRrLWEarl4YNLQOlqw1cpO","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          Fluid.plugins.initFancyBox('#valine .vcontent img:not(.vemoji)');
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -521,6 +485,19 @@
   
 
 
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
 
 
 
