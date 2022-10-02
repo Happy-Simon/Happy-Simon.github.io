@@ -24,7 +24,7 @@
 <meta property="og:description" content="R编程备查">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-06-04T14:02:17.000Z">
-<meta property="article:modified_time" content="2022-06-04T15:29:27.733Z">
+<meta property="article:modified_time" content="2022-09-28T06:31:18.357Z">
 <meta property="article:author" content="Black">
 <meta property="article:tag" content="编程">
 <meta property="article:tag" content="R">
@@ -199,7 +199,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      270 字
+      432 字
     </span>
   
 
@@ -208,7 +208,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      3 分钟
+      4 分钟
     </span>
   
 
@@ -249,15 +249,21 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2022年6月4日 晚上
+                  本文最后更新于：2022年9月28日 下午
                 
               </p>
             
             <div class="markdown-body">
               <ul>
-<li><strong>处理循环中的报错</strong><figure class="highlight r"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></div></td><td class="code"><pre><code class="hljs R">result <span class="hljs-operator">=</span> tryCatch<span class="hljs-punctuation">(</span><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-comment">#正常的逻辑</span><br>  expr<br><span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span> warning <span class="hljs-operator">=</span> <span class="hljs-keyword">function</span><span class="hljs-punctuation">(</span>w<span class="hljs-punctuation">)</span> <span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-comment">#出现warning的处理逻辑</span><br>    warning<span class="hljs-operator">-</span>handler<span class="hljs-operator">-</span>code<br><span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span> error <span class="hljs-operator">=</span> <span class="hljs-keyword">function</span><span class="hljs-punctuation">(</span>e<span class="hljs-punctuation">)</span> <span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-comment">#出现error的处理逻辑</span><br>    error<span class="hljs-operator">-</span>handler<span class="hljs-operator">-</span>code<br><span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span> finally <span class="hljs-operator">=</span> <span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-comment">#不管出现异常还是正常都会执行的代码模块，</span><br>    <span class="hljs-comment">#一般用来处理清理操作，例如关闭连接资源等。</span><br>    cleanup<span class="hljs-operator">-</span>code<br><span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">)</span><br></code></pre></td></tr></table></figure></li>
+<li>
+<p><strong>处理循环中的报错</strong></p>
+<figure class="highlight r"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></div></td><td class="code"><pre><code class="hljs R">result <span class="hljs-operator">=</span> tryCatch<span class="hljs-punctuation">(</span><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-comment">#正常的逻辑</span><br>  expr<br><span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span> warning <span class="hljs-operator">=</span> <span class="hljs-keyword">function</span><span class="hljs-punctuation">(</span>w<span class="hljs-punctuation">)</span> <span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-comment">#出现warning的处理逻辑</span><br>    warning<span class="hljs-operator">-</span>handler<span class="hljs-operator">-</span>code<br><span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span> error <span class="hljs-operator">=</span> <span class="hljs-keyword">function</span><span class="hljs-punctuation">(</span>e<span class="hljs-punctuation">)</span> <span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-comment">#出现error的处理逻辑</span><br>    error<span class="hljs-operator">-</span>handler<span class="hljs-operator">-</span>code<br><span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span> finally <span class="hljs-operator">=</span> <span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-comment">#不管出现异常还是正常都会执行的代码模块，</span><br>    <span class="hljs-comment">#一般用来处理清理操作，例如关闭连接资源等。</span><br>    cleanup<span class="hljs-operator">-</span>code<br><span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">)</span><br></code></pre></td></tr></table></figure>
+</li>
+<li>
+<p>R与矩阵计算</p>
+</li>
 </ul>
-
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs &#123;r&#125;"># QR分解<br>qr(hB)<br>qr.X(qr, complete = FALSE, ncol =)<br>qr.Q(qr, complete = FALSE, Dvec =)<br>qr.R(qr, complete = FALSE)<br># 上三角和下三角矩阵<br>lower.tri(x, diag = FALSE)<br>upper.tri(x, diag = FALSE)<br></code></pre></td></tr></table></figure>
             </div>
             <hr>
             <div>
