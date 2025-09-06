@@ -17052,11 +17052,11 @@ initCom(PDFViewerApplication);
     if (HOSTED_VIEWER_ORIGINS.has(viewerOrigin)) {
       return;
     }
-    // const fileOrigin = URL.parse(file, window.location)?.origin;
+    const fileOrigin = URL.parse(file, window.location)?.origin;
     // if (fileOrigin === viewerOrigin) {
     //   return;
     // }
-    const ex = new Error("file origin does not match viewer's");
+    // const ex = new Error("file origin does not match viewer's");
     PDFViewerApplication._documentError("pdfjs-loading-error", {
       message: ex.message
     });
