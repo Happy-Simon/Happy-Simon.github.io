@@ -1,0 +1,653 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/Haer.ico">
+  <link rel="icon" href="/img/Haer.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Black">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="编程时常用的一些工具的使用备忘">
+<meta property="og:type" content="article">
+<meta property="og:title" content="工具使用备忘">
+<meta property="og:url" content="http://example.com/2022/03/10/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E5%A4%87%E5%BF%98/index.html">
+<meta property="og:site_name" content="黑黑">
+<meta property="og:description" content="编程时常用的一些工具的使用备忘">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pica.zhimg.com/50/v2-f9292a9773806e70ed677a40da2aaec3_720w.jpg?source=1940ef5c">
+<meta property="article:published_time" content="2022-03-10T11:42:30.000Z">
+<meta property="article:modified_time" content="2022-03-20T12:33:40.000Z">
+<meta property="article:author" content="Black">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://pica.zhimg.com/50/v2-f9292a9773806e70ed677a40da2aaec3_720w.jpg?source=1940ef5c">
+  
+  
+  <title>工具使用备忘 - 黑黑</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"ol76mhwbwiN4wCvzYwrelxL9-gzGzoHsz","app_key":"DpaRrLWEarl4YNLQOlqw1cpO","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>黑黑</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/activities/">
+                <i class="iconfont icon-activities-fill"></i>
+                活动
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                笔记
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/diary/">
+                <i class="iconfont icon-diary-fill"></i>
+                随感
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('https://macjpeg.macsc.com/macdown/pic/202009/29094636_722e02e98f.jpeg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="工具使用备忘">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-03-10 19:42" pubdate>
+        2022年3月10日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.1k 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      18 分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-page-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">工具使用备忘</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2022年3月20日 晚上
+                
+              </p>
+            
+            <div class="markdown-body">
+              <p>编程时常用的一些工具的使用备忘</p>
+<span id="more"></span>
+<h1 id="1-安装anaconda-r-rstudio"><a class="markdownIt-Anchor" href="#1-安装anaconda-r-rstudio"></a> 1. 安装anaconda, R, Rstudio</h1>
+<ul>
+<li>安装anaconda<br />
+<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/347990651">https://zhuanlan.zhihu.com/p/347990651</a></li>
+<li>安装R和Rstudio<br />
+<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109468400">https://zhuanlan.zhihu.com/p/109468400</a></li>
+<li>将Rstudio使用的R改为为anaconda中的R<br />
+先替换anaconda中的文件<br />
+<a target="_blank" rel="noopener" href="https://www.shuzhiduo.com/A/Ae5RabwYJQ/">https://www.shuzhiduo.com/A/Ae5RabwYJQ/</a><br />
+然后更改Rstudio选择的R<br />
+<a target="_blank" rel="noopener" href="https://blog.csdn.net/xspyzm/article/details/75174432">https://blog.csdn.net/xspyzm/article/details/75174432</a></li>
+</ul>
+<h2 id="11-注意事项"><a class="markdownIt-Anchor" href="#11-注意事项"></a> 1.1. 注意事项</h2>
+<ul>
+<li>更改Anaconda Prompt的默认打开路径<br />
+<a target="_blank" rel="noopener" href="https://blog.csdn.net/c20081052/article/details/88839479">https://blog.csdn.net/c20081052/article/details/88839479</a></li>
+</ul>
+<h1 id="2-安装texlive和texstudio"><a class="markdownIt-Anchor" href="#2-安装texlive和texstudio"></a> 2. 安装TeXlive和TeXstudio</h1>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/138586028">https://zhuanlan.zhihu.com/p/138586028</a></p>
+<figure class="highlight r"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><pre><code class="hljs r">.libPaths<span class="hljs-punctuation">(</span><span class="hljs-punctuation">)</span><br><span class="hljs-string">&quot;D:/Program Files (x86)/R/R-4.1.1/library&quot;</span><br><span class="hljs-string">&quot;D:/Program Files (x86)/Anaconda3/envs/r_env/lib/R/library&quot;</span><br></code></pre></td></tr></table></figure>
+<h1 id="3-快速下载网络文件或百度云盘内容"><a class="markdownIt-Anchor" href="#3-快速下载网络文件或百度云盘内容"></a> 3. 快速下载网络文件或百度云盘内容</h1>
+<ul>
+<li><strong>IDM</strong>
+<ul>
+<li>
+<p>安装<br />
+<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1144y1t7NU/?spm_id_from=autoNext">IDM永久免费版安装教程</a></p>
+</li>
+<li>
+<p>IDM下载百度云资源<br />
+<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1d54y1H7Q9/">如何调用IDM下载某度云盘直链不限速</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="4-连接服务器"><a class="markdownIt-Anchor" href="#4-连接服务器"></a> 4. 连接服务器</h1>
+<ul>
+<li><strong>Xshell</strong><br />
+官网下载校园版<br />
+<a target="_blank" rel="noopener" href="https://www.netsarang.com/zh/thank-you-download/">https://www.netsarang.com/zh/thank-you-download/</a><br />
+堡垒机登陆Linux<br />
+<a target="_blank" rel="noopener" href="https://daimajiaoliu.com/daima/47990c740900400">使用xshell通过跳板机(堡垒机)连接服务器<br />
+</a></li>
+</ul>
+<h2 id="41-vscode的remote-ssh插件"><a class="markdownIt-Anchor" href="#41-vscode的remote-ssh插件"></a> 4.1. VScode的Remote-SSH插件</h2>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener" href="https://f7ed.com/2021/10/19/vscode-remote-ssh/">Remote SSH-跳板机设置</a><br />
+生成密钥</p>
+</li>
+<li>
+<p>本地主机生成密钥到文件名id_rs</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> C:\Users\jiangzihao\.ssh<br>ssh-keygen<br></code></pre></td></tr></table></figure>
+<p>ssh localhost</p>
+</li>
+<li>
+<p>本地主机密钥上传到跳板机</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 将主机的id_rs.pub文件上传到跳板机</span><br><span class="hljs-built_in">cd</span> ~/.ssh<br><span class="hljs-built_in">cat</span> ~/.ssh/id_rs.pub &gt;&gt; authorized_keys<br></code></pre></td></tr></table></figure>
+</li>
+<li>
+<p>主机密钥上传到跳板机，并生成密钥到jump</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> ~/.ssh<br><span class="hljs-built_in">cat</span> ~/.ssh/id_rs.pub &gt;&gt; authorized_keys<br>ssh-keygen<br>jump<br><span class="hljs-comment"># Enter</span><br><span class="hljs-comment"># Enter</span><br></code></pre></td></tr></table></figure>
+<p><code>bash ssh localhost # 服务器没有.ssh文件夹时输入这一步</code></p>
+</li>
+<li>
+<p>主机设置<br />
+将跳板机生成的jump.pub文件放到主机下的<code>C:\Users\jiangzihao\.ssh</code>目录</p>
+</li>
+<li>
+<p>VScode配置</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs bash">Host 33<br>HostName 10.8.xxx.33<br>User jiangzihao<br>Port 5xx22<br>IdentityFile C:\Users\jiangzihao\.ssh\id_rs<br><br>Host 71<br>HostName 10.8.xxx.71<br>User jiangzihao<br>Port 22<br>ProxyCommand ssh -W %h:%p 33<br>IdentityFile C:\Users\jiangzihao\.ssh\jump<br></code></pre></td></tr></table></figure>
+<p>参考自 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/452863155">知乎-VScode ssh免密配置</a></p>
+</li>
+</ul>
+<h1 id="5-markdown-based-on-vscode"><a class="markdownIt-Anchor" href="#5-markdown-based-on-vscode"></a> 5. Markdown based on VScode</h1>
+<h2 id="51-markdown插件"><a class="markdownIt-Anchor" href="#51-markdown插件"></a> 5.1. Markdown插件</h2>
+<h2 id="52-markdown命令"><a class="markdownIt-Anchor" href="#52-markdown命令"></a> 5.2. markdown命令</h2>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener" href="https://markdown.com.cn/cheat-sheet.html#%E6%80%BB%E8%A7%88">速查表</a></p>
+</li>
+<li>
+<p>脚注<br />
+Here’s a sentence with a footnote. <sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="This is the footnote.
+">[1]</span></a></sup></p>
+</li>
+<li>
+<p>标题编号<br />
+在VScode安装插件</p>
+</li>
+<li>
+<p>CSS文件</p>
+<blockquote>
+<p>markdown add index</p>
+</blockquote>
+</li>
+<li>
+<p>Emojis<br />
+<a target="_blank" rel="noopener" href="https://gist.github.com/rxaviers/7360908">Emojis</a></p>
+</li>
+</ul>
+<h2 id="53-markdown文档管理hexo"><a class="markdownIt-Anchor" href="#53-markdown文档管理hexo"></a> 5.3. Markdown文档管理hexo</h2>
+<ul>
+<li>Notion</li>
+<li>Obsidian</li>
+</ul>
+<h1 id="6-latex"><a class="markdownIt-Anchor" href="#6-latex"></a> 6. Latex</h1>
+<h2 id="61-latex-base-on-vscode"><a class="markdownIt-Anchor" href="#61-latex-base-on-vscode"></a> 6.1. Latex base on VScode</h2>
+<h2 id="62-latex-on-overleaf"><a class="markdownIt-Anchor" href="#62-latex-on-overleaf"></a> 6.2. Latex on overleaf</h2>
+<h1 id="7-git-based-on-vscode"><a class="markdownIt-Anchor" href="#7-git-based-on-vscode"></a> 7. Git based on VScode</h1>
+<h2 id="71-git插件"><a class="markdownIt-Anchor" href="#71-git插件"></a> 7.1. Git插件</h2>
+<p>自带</p>
+<h2 id="72-git命令"><a class="markdownIt-Anchor" href="#72-git命令"></a> 7.2. Git命令</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs git">git init # 初始化仓库<br>git add # 添加文件到仓库  <br>git commit -m &quot;代码注释&quot;# 将暂存区的文件都添加到仓库<br>git push origin master<br><br><br># 其他<br>git status # 查看仓库当前的状态，显示有表更的文件<br>git diff # 比较文件的不同，即暂存区和工作区的差异<br>git reset # 回退版本<br>git rm # 删除工作区文件<br>git mv # 移动或重命名工作区文件<br>git log #查看历史提交记录<br>git blame # 以列表形式查看指定文件的历史修改记录<br>git remote #远程仓库操作<br>git fetch # 从远程获取代码块库<br>git pull # 下载远程代码并合并<br>git push # 上传远程代码并合并<br></code></pre></td></tr></table></figure>
+<h1 id="8-文献查找与管理"><a class="markdownIt-Anchor" href="#8-文献查找与管理"></a> 8. 文献查找与管理</h1>
+<h2 id="81-文献查找技巧"><a class="markdownIt-Anchor" href="#81-文献查找技巧"></a> 8.1. 文献查找技巧</h2>
+<ul>
+<li>先Wiki，如果有完整的词条的话，然后从参考文献中找。</li>
+<li>快速了解一个领域，找Survey(review)的文章</li>
+</ul>
+<h2 id="82-文献管理"><a class="markdownIt-Anchor" href="#82-文献管理"></a> 8.2. 文献管理</h2>
+<ul>
+<li>Zotero</li>
+</ul>
+<h1 id="9-reference"><a class="markdownIt-Anchor" href="#9-reference"></a> 9. Reference</h1>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/hunttown/p/5802082.html">编写运行R脚本</a></p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/cmusunqi/article/details/98734942">linux下运行r脚本</a></p>
+</li>
+</ul>
+<section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>This is the footnote.
+<a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/03/10/Linux%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Linux常用操作</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/03/10/test-my-site/">
+                        <span class="hidden-mobile">GitHub+Hexo 搭建个人网站</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"ol76mhwbwiN4wCvzYwrelxL9-gzGzoHsz","appKey":"DpaRrLWEarl4YNLQOlqw1cpO","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          Fluid.plugins.initFancyBox('#valine .vcontent img:not(.vemoji)');
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"rect":"opacity:0.5","log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
