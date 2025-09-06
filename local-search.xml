@@ -4,9 +4,22 @@
   
   
   <entry>
+    <title>Hello World</title>
+    <link href="/2025/09/04/hello-world/"/>
+    <url>/2025/09/04/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Hexo的一些基本操作</p><span id="more"></span><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2><h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>乙一：幽萤录</title>
-    <link href="/2025/09/06/%E4%B9%99%E4%B8%80%EF%BC%9A%E5%B9%BD%E8%90%A4%E5%BD%95/"/>
-    <url>/2025/09/06/%E4%B9%99%E4%B8%80%EF%BC%9A%E5%B9%BD%E8%90%A4%E5%BD%95/</url>
+    <link href="/2025/08/23/%E4%B9%99%E4%B8%80%EF%BC%9A%E5%B9%BD%E8%90%A4%E5%BD%95/"/>
+    <url>/2025/08/23/%E4%B9%99%E4%B8%80%EF%BC%9A%E5%B9%BD%E8%90%A4%E5%BD%95/</url>
     
     <content type="html"><![CDATA[<p>最近疯狂阅读了乙一的许多书，包括《只有你听到》、《寂寞的频率》、《失踪假日》、《杀死玛丽苏》、《夏天、烟火和我的尸体》、《将死未死的青》以及《暗黑童话》。乙一的作品常被分为“白乙一”与“黑乙一”两种风格。“黑乙一”擅长描绘残酷、近乎麻木的凶杀与暴虐场景，令人心惊；而“白乙一”的故事则像阴天里偶尔透出的阳光，温柔中带着哀伤。无论黑白，他的作品始终弥漫着一种浓浓的孤独感。他笔下的人物，往往是世俗眼中“不合群”或“不正常”的人。他们大多没有现实中的朋友，取而代之的，是那些带有奇幻色彩的陪伴：比如只能通过脑内电话联系的男孩，日记中虚构的完美女友，可以转移伤痛的男孩，幽灵、阴暗面的化身，甚至一株会唱歌的花。     <br />也许正因为我自己也正处在渴望被理解、寻找能“说得着”的人的阶段，我总感觉能与他书中的人物共鸣——仿佛乙一也在世界的某个角落，安静地理解着我。上面提到的书中，除了最后两本是中篇，其余都是短篇小说集。读乙一的短篇，就像在一个闲适的下午品尝咖啡与甜点：不会太厚重，却也绝不乏味。而这篇书评，想要重点聊一聊《将死未死的青》。   <br /> <br />正雄班上新来的羽田老师很年轻，且喜欢踢足球，经常和班上的男生们一起踢足球，很快就收获了全班同学的一致喜爱。但慢慢的，有些学生开始对他不满了，或许是因为他拖堂又或者是因为布置作业。羽田老师想维持在同学心目中的美好形象，但他又无法承受追求卓越带来的压力，在某次偶然，他发现了一件事情——通过指责正雄，可以继续维持自己在同学们面前的形象、维持自己班级在学校的形象。</p><p>他开始在课堂上分享正雄的糗事来活跃气氛，引得全班发笑。布置作业时，他会说：“正因为正雄上次没写算术题，所以今天继续做算术。”拖堂时，他这样解释：“因为正雄刚刚打哈欠了，我们再讲十分钟。”就连班上有人欺负低年级学生，羽田老师也责怪正雄：“你为什么没有阻止？”仿佛所有不愉快的事，源头都是正雄。“没有人对老师不满，大家都觉得是被我害的——要是我没打哈欠、认真写作业，他们就不必受罚。虽然没人明说，但我知道他们就是这么想的。”正雄这样认为。</p><p>为了不被羽田老师训斥，正雄拼命地写作业，忍着不打哈欠，在他面前正襟危坐，表现得安静乖巧。正雄时刻小心翼翼，以为只要不犯错，就不会惹老师生气，也不会被大家讨厌。可还是行不通，即使他写了作业，羽田老师也会挑各种毛病来训斥我，比如字不工整、答案不正确。有一次，布置的作业特别难，正雄为了不被批评，花了好大力气去做，却反被被羽田老师指责正雄肯定是抄答案或找人写的，正雄辩解，老师却一口咬定他在撒谎，并以此为由给大家布置了很多作业。</p><p>后来，不止羽田老师，其他同学也开始让正雄替自己承担压力。跑的最快的桥本在试图超越末位的正雄时摔倒了，失去了最佳成绩，桥本说这是因为正雄绊倒了他。正雄成了班里的“平衡委员”——为了维持班里的生态平衡而存在。因为老师持续对正雄恶语相向，其他同学也开始疏远他，连他最好的朋友也渐渐远离。为了不让家人担心，正雄从不对他们提起学校的遭遇，反而编造“老师经常夸我”、“和同学相处很好”的谎言。      有一次，正雄鼓起勇气对老师说：“我觉得只有我总是被老师训斥……”老师却回应道：“只有你被训斥，你觉得这样不公平？你好像希望大家都被训斥，而不是只有你一个人挨骂——你真是一个自私的坏孩子。”他还强迫正雄重复说：“是的，没错，我是个坏孩子。” 那一刻，正雄内心充满了罪恶感，觉得自己不配像别人一样正常生活，认为大家远离他是理所当然的。</p><p>幸运的是，“青”出现了，他帮助正雄去反击凌辱他的同学、甚至协助正雄潜入羽田老师家投毒，但不幸的是，他们被老师发现了，在“青”的指引下，正雄假装昏迷，被老师带进树林，并在途中寻找机会反击和逃跑……</p><p>整个故事叙述流畅，深入描绘了正雄所遭遇的校园霸凌及其艰难的反抗过程。读完我有以下几点感触：</p><p>本书的霸凌者并非人前臭名昭著的坏人，相反，他在众人眼中形象良好。而他霸凌正雄的原因，恰恰是因为他想维持这种形象，却无力承担背后的压力，于是选择将压力转嫁给正雄——让一个无辜者替他承担负面情绪。（呵呵😒，痛斥这类人！）</p><p>而文中出现的“青”是正雄被压抑的反抗意识或阴暗面的具象化。每次正雄精神受创，“青”的身上就会增添外伤。他的伤痕，正是正雄内心无形伤害的可见印记。而他帮助正雄反击、甚至策划极端行为，也象征当人被逼到绝境时，反击是一种本能的自我保护。所以啊，我们应当允许自己保有适当的“阴暗面”，保留一份攻击性。——不是教唆像正雄那样采取极端手段，而是提醒自己：不要失去对抗恶意和不公的武器与勇气。</p>]]></content>
     
@@ -17,19 +30,6 @@
       <tag>随感</tag>
       
     </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="/2025/09/04/hello-world/"/>
-    <url>/2025/09/04/hello-world/</url>
-    
-    <content type="html"><![CDATA[<p>Hexo的一些基本操作</p><span id="more"></span><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2><h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
     
   </entry>
   
