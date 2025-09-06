@@ -24,7 +24,7 @@
 <meta property="og:description" content="Hexo建立个人博客成长之路">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-05-22T06:01:22.000Z">
-<meta property="article:modified_time" content="2025-09-06T10:13:27.304Z">
+<meta property="article:modified_time" content="2025-09-06T10:32:16.453Z">
 <meta property="article:author" content="Black">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -196,7 +196,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      456 字
+      1.1k 字
     </span>
   
 
@@ -205,7 +205,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      4 分钟
+      10 分钟
     </span>
   
 
@@ -284,11 +284,41 @@
 <ul>
 <li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21193762/answer/103097754">使用hexo，如果换了电脑怎么更新博客？</a></li>
 </ul>
-<p><strong>增加pdf/cv</strong></p>
+<h2 id="增加pdfcv"><a class="markdownIt-Anchor" href="#增加pdfcv"></a> 增加pdf/cv</h2>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://yuzhang.net/2023/11/07/%E5%A6%82%E4%BD%95%E5%9C%A8hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%B5%8C%E5%85%A5PDF/">如何在hexo博客中嵌入PDF</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/lifeislife/p/17207229.html">HEXO 博客嵌入 PDF</a></li>
+<li>
+<p><strong>Step 1:</strong> 下载 pdf.js<br />
+前往<a target="_blank" rel="noopener" href="https://mozilla.github.io/pdf.js">官网</a>下载pdf.js;</p>
+</li>
+<li>
+<p><strong>Step 2:</strong> 添加 pdfjs 到<strong>主题</strong>中的source</p>
+<p>在 <code>themes/fluid/source</code> 下新建文件夹，自行命名为 <code>myjs</code> ，将下载文件夹命名为 <code>pdfjs</code>，拷贝到 <code>themes/fluid/source/myjs</code> 中。</p>
+</li>
+<li>
+<p><strong>Step 3:</strong> 配置 <strong>博客 (非主题)</strong> 的 <code>_config.yml</code><br />
+打开 HEXO 的配置文件（不是主题的配置文件）  <code>_config.yml</code>，搜索 <code>skip_render</code>，配置如下：<br />
+skip_render: myjs/**</p>
+</li>
+<li>
+<p><strong>Step 4:</strong> 添加需要插入的pdf文件</p>
+<p>在<strong>博客根目录</strong>的 <code>source</code>文件夹里，新建一个pdf文件夹，用于存储需要嵌入的pdf文件。需要注意的是，存入的pdf文件名不能含有非法字符，比如&amp;；</p>
+</li>
+<li>
+<p><strong>Step 5:</strong> <strong>无需修改viewer.js</strong><br />
+其他教程都让修改这个文件，但是新下载的pdf.js无需修改该文件。</p>
+</li>
+<li>
+<p><strong>Step 6:</strong> 在 Markdown 文档中使用 <code>&lt;iframe&gt;</code> 控件配合pdf.js 库完成 pdf 显示</p>
+</li>
 </ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">&lt;iframe src=<span class="hljs-string">&quot;/myjs/pdfjs/web/viewer.html?file=/pdf/cv250906.pdf&quot;</span> style=<span class="hljs-string">&#x27;width:100%;height:800px&#x27;</span>&gt;&lt;/iframe&gt;<br></code></pre></td></tr></table></figure>
+<p>其中<code>/myjs/pdfjs/web/viewer.html</code>：指向自己 pdfjs 目录下的viewer.html；<code>&lt;src-to-pdf&gt;</code>：指向自己 pdf 文件的位置。</p>
+<blockquote>
+<p>参考：<br />
+<a target="_blank" rel="noopener" href="https://www.cnblogs.com/lifeislife/p/17207229.html">HEXO 博客嵌入 PDF</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/lifeislife/p/17207229.html">HEXO 博客嵌入 PDF</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.zywvvd.com/notes/hexo/theme/fluid/fluid-pdf/fluid-pdf/">Fluid -3- pdf.js PC,移动端查看 PDF</a></p>
+</blockquote>
 
             </div>
             <hr>
